@@ -1,0 +1,35 @@
+// COLOR VARIABLES
+$color-primary: #1C548F;
+
+// FONT VARIABLES
+$font-primary: 'Lato', sans-serif;
+$font-serif: 'Alegreya', serif;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+    font-family: $font-primary;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.6;
+
+    // Testing
+    background-color: $color-primary;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    // grid-template-columns: minmax(6rem, 1fr);
+}
