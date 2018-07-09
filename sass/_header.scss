@@ -1,0 +1,33 @@
+.header {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba($color-purple-dark, 0.8), rgba($color-purple-light, 0.8));
+  background-size: cover;
+  background-position: center;
+  grid-area: hero;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 40% 1fr 40%;
+  justify-content: center;
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 60% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90vh, 60% 100%, 0 100%);
+  }
+
+  &__hero-logo {
+      height: 7rem;
+      
+  }
+
+  &__hero-img {
+      // // display: grid;
+      // // justify-self: end;
+      // grid-column: 1 / 2;
+      // grid-row: 2 / 3;
+  }
+
+  &__hero-text {
+      font-family: $font-serif;
+  }
+}

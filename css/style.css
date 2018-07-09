@@ -1,3 +1,16 @@
+/* COLOR IDEAS
+#1C548F
+#274156
+*
+
+#400E72
+#9E429D
+#FEA8A9
+#1C6E8C
+#F9EC2F
+#FBFCFF / #F7EDF0 /
+
+*/
 *,
 *::before,
 *::after {
@@ -13,9 +26,28 @@ body {
   font-family: "Lato", sans-serif;
   color: #fff;
   font-weight: 400;
-  line-height: 1.6;
-  background-color: #1C548F; }
+  line-height: 1.6; }
 
 .container {
   display: grid;
-  grid-template-rows: repeat(6, 1fr); }
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-areas: "nav" "hero" "services" "portfolio" "testimonials" "about" "contact"; }
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(64, 14, 114, 0.8), rgba(158, 66, 157, 0.8));
+  background-size: cover;
+  background-position: center;
+  grid-area: hero;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 40% 1fr 40%;
+  justify-content: center; }
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 60% 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 90vh, 60% 100%, 0 100%); } }
+  .header__hero-logo {
+    height: 7rem; }
+  .header__hero-text {
+    font-family: "Alegreya", serif; }
