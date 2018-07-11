@@ -1,0 +1,27 @@
+.app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    height: 100vh;
+    // padding: 3rem;
+    overflow: hidden;
+}
+
+.content {
+    flex: 1;
+    // padding: 3rem 0;
+}
+
+.main-content {
+    overflow: hidden;
+    // width: 100%;
+    box-shadow: var(--shadow-light);
+}

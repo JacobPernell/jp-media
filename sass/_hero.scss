@@ -1,0 +1,21 @@
+.hero {
+    height: 100%;
+    // width: 100%;
+    background-color: var(--color-pink);
+    // position: relative;
+
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 60% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 90vh, 60% 100%, 0 100%);
+    }
+
+    &__img {
+        height: 80%;
+    }
+
+    &__text {
+        font-family: $font-serif;
+        font-size: 4.5rem;
+        color: #FFF;
+    }
+}
