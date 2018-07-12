@@ -1,21 +1,79 @@
 .hero {
     height: 100%;
-    background-color: var(--color-pink);
-    // -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 60% 100%, 0 100%);
-    // clip-path: polygon(0 0, 100% 0, 100% 90vh, 60% 100%, 0 100%);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 50;
 
-    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 60% 100%, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 90vh, 60% 100%, 0 100%);
+    &__container {
+        height: 80vh;
+        background-color: var(--color-pink);
+        display: flex;
+        flex-direction: row;
+
+        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 60% 100%, 0 100%);
+        }
     }
 
     &__img {
-        height: 80%;
+        height: 90%;
+        filter: var(--drop-shadow);
+        transform: translate(10rem, 10rem);
     }
 
     &__text {
+        width: 40%;
         font-family: $font-serif;
         font-size: 4.5rem;
         color: #FFF;
+        align-self: center;
+        font-weight: 400;
+        padding-left: 5rem;
+        padding-bottom: 5rem;
+        animation: fadeIn .7s ease-out;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    &__learn-more {
+        width: 40%;
+        height: 20%;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 300;
+        letter-spacing: .1rem;
+        background-color: var(--color-blue-dark);
+        z-index: 100;
+
+        display: flex;
+        align-self: flex-end;
+        justify-content: flex-end;
+        align-items: center;
+        padding-top: 3rem;
+        padding-right: 5rem;
+
+        position: absolute;
+        left: 60%;
+
+        transition: all .2s ease-out;
+
+        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+            clip-path: polygon(100% 0, 100% 100%, 0 100%);
+        }
+
+        &:link,
+        &:visited {
+            color: var(--color-white);
+        }
+
+        &:hover {
+            background-color: var(--color-blue-medium-2);
+            color: var(--color-white);
+            height: 22%;
+        }
     }
 }

@@ -1,4 +1,6 @@
 :root {
+
+    --color-white: #FFF;
     --color-off-white: #FBFCFF;
     --color-grey-light-1: #F9F9F9;
     --color-grey-light-2: #F4F2F2;
@@ -8,14 +10,19 @@
     --color-black: #000;
 
     --color-pink: #FEA8A9;
+    --color-pink-dark: #C44C96;
     --color-purple-dark: #400E72;
     --color-purple-light: #9E429D;
-    --color-blue-dark: #1C548F;
+    --color-blue-dark: #011638;
+    --color-blue-medium: #1C548F;
+    --color-blue-medium-2: #365B96;
     --color-blue-light: #1C6E8C;
     --color-yellow: #F9EC2F;
 
     --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
     --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+
+    --drop-shadow: drop-shadow(-1rem 0 2rem rgba(0,0,0,.3));
 
     --line: 1px solid var(--color-grey-light-2);
 }
