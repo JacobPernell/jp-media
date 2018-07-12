@@ -2,26 +2,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: auto;
     width: 90vw;
     height: 100vh;
-    // padding: 3rem;
-    overflow: hidden;
 }
 
 .content {
-    flex: 1;
-    // padding: 3rem 0;
+    // flex: 1;
+    height: 90%;
+    width: 100%;
+    box-shadow: var(--shadow-light);
+    overflow-y: scroll;
 }
 
 .main-content {
-    overflow: hidden;
     // width: 100%;
-    box-shadow: var(--shadow-light);
+
 }

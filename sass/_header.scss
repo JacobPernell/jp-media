@@ -4,15 +4,15 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    // border: var(--line);
 
     &__nav {
-        // border: var(--line);
         font-weight: 700;
         font-size: 1.6rem;
         color: black;
     }
 
     &__logo {
-        height: 7rem;
+        height: 5rem;
     }
 }

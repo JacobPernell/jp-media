@@ -44,7 +44,7 @@ body {
     font-size: 1.6rem;
     color: black; }
   .header__logo {
-    height: 7rem; }
+    height: 5rem; }
 
 .hero {
   height: 100%;
@@ -63,20 +63,15 @@ body {
 .app {
   display: flex;
   align-items: center;
-  justify-content: center;
-  overflow: hidden; }
+  justify-content: center; }
 
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: auto;
   width: 90vw;
-  height: 100vh;
-  overflow: hidden; }
+  height: 100vh; }
 
 .content {
-  flex: 1; }
-
-.main-content {
-  overflow: hidden;
-  box-shadow: var(--shadow-light); }
+  height: 90%;
+  width: 100%;
+  box-shadow: var(--shadow-light);
+  overflow-y: scroll; }
