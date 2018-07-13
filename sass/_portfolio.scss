@@ -1,0 +1,59 @@
+.portfolio {
+    background-color: var(--color-pink-dark);
+    height: 80vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &__header {
+        font-weight: 300;
+        font-size: 6rem;
+        letter-spacing: 1rem;
+        text-transform: uppercase;
+        padding-left: 2rem;
+        color: var(--color-white);
+        border-right: 2px solid white;
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        height: 100%;
+    }
+
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+
+        .cell {
+            width: 25rem;
+            height: 25rem;
+            overflow: hidden;
+        }
+
+        &-img {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+
+    &__learn-more {
+        height: 10%;
+        width: 30%;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+    }
+
+    &__info-card {
+
+    }
+}

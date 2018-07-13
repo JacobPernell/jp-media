@@ -2,7 +2,7 @@
     height: 10rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     margin-top: -2rem;
@@ -11,17 +11,16 @@
     &__nav {
         font-weight: 700;
         font-size: 1.6rem;
-        // width: 50rem;
 
         .top-nav {
+            list-style: none;
             display: flex;
             flex-direction: row;
-            justify-content: center;
-            width: 100%;
-            list-style: none;
+            justify-content: space-around;
+            width: 40vw;
 
             &__item {
-                margin-right: 5rem;
+                //
             }
 
             &__link {
@@ -43,8 +42,10 @@
                     transition: width .3s ease-out;
                 }
 
-                &:hover::after {
+                &:hover::after,
+                &:focus {
                     width: 100%;
+                    // outline: none;
                 }
             }
         }
