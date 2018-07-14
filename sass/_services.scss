@@ -1,10 +1,9 @@
 .services {
     background-color: var(--color-blue-dark);
     height: 80vh;
-
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 
     &__header {
@@ -13,6 +12,7 @@
         letter-spacing: 1rem;
         text-transform: uppercase;
         padding-right: 2rem;
+        cursor: default;
         color: var(--color-white);
         border-left: 2px solid white;
         writing-mode: vertical-lr;
@@ -21,13 +21,30 @@
 
     &__icons {
         flex: 1;
-
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
+        justify-content: center;
+        width: 40%;
+
+        &--2 {
+            transform: translateY(-5rem);
+        }
+
+        &--6 {
+            transform: translateY(5rem);
+        }
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
 
         & > * {
             width: 10rem;
             height: 10rem;
+            margin: 2rem;
             border: var(--line);
             border-radius: 50%;
             color: white;
@@ -36,7 +53,7 @@
             justify-content: center;
             align-items: center;
 
-            transition: all .2s;
+            transition: all 0.2s;
 
             &:hover {
                 background: white;
@@ -44,32 +61,8 @@
             }
         }
 
-        &--1 {
-
-        }
-
-        &--2 {
-
-        }
-
-        &--3 {
-
-        }
-
-        &--4 {
-
-        }
-
-        &--5 {
-
-        }
-
-        &--6 {
-
-        }
-
-        &--7 {
-
+        &--mid {
+            margin: 0;
         }
     }
 }
