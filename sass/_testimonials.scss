@@ -1,0 +1,70 @@
+.testimonials {
+    background-color: var(--color-blue-medium);
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &__header {
+        font-weight: 300;
+        font-size: 4rem;
+        letter-spacing: 1rem;
+        text-transform: uppercase;
+        padding: 0 2rem;
+        cursor: default;
+        color: var(--color-white);
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+    }
+
+    &__grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        flex: 1;
+    }
+
+    &__card {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        padding: 4rem;
+        background: var(--color-white);
+        box-shadow: 0 3rem 6rem rgba(0,0,0,.1);
+        transform: skewX(-12deg);
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__picture {
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+        transform: skewX(12deg);
+        overflow: hidden;
+
+
+        // @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        //   -webkit-clip-path: circle(50% at 50% 50%);
+        //   clip-path: circle(50% at 50% 50%);
+        //   -webkit-shape-outside: circle(50% at 50% 50%);
+        //   shape-outside: circle(50% at 50% 50%);
+        //   border-radius: none;
+        // }
+
+        img {
+            // height: 100%;
+            //
+        }
+    }
+
+    &__text {
+        transform: skewX(12deg);
+    }
+}
