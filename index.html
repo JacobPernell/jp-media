@@ -11,6 +11,7 @@
     <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png"> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/94/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.1/clipboard.min.js"></script>
 
     <title>Jacob Pernell Media</title>
 </head>
@@ -103,13 +104,16 @@
                 <section class="portfolio">
                     <div class="portfolio__overlay">
                         <span class="portfolio__overlay--close" onclick="togglePortfolioOverlay()">&larr;</span>
+                        <h1 class="portfolio__overlay--title"></h1>
+                        <div class="portfolio__overlay--image"></div>
+                        <div class="portfolio__overlay--text"></div>
                     </div>
                     <div class="portfolio__container">
                         <h1 class="portfolio__header">PORTFOLIO</h1>
 
                         <div class="portfolio__grid">
 
-                            <div class="portfolio__card" onclick="togglePortfolioOverlay()">
+                            <div class="portfolio__card" onclick="togglePortfolioOverlay()" data-portfolio-info="musicReel">
                                 <div class="portfolio__card--image">
                                     <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
                                 </div>
@@ -119,7 +123,7 @@
                                     </div>
                             </div>
 
-                            <div class="portfolio__card" onclick="togglePortfolioOverlay()">
+                            <div class="portfolio__card" onclick="togglePortfolioOverlay()" data-portfolio-info="alexMathew">
                                 <div class="portfolio__card--image">
                                     <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
                                 </div>
@@ -129,7 +133,7 @@
                                 </div>
                             </div>
 
-                            <div class="portfolio__card" onclick="togglePortfolioOverlay()">
+                            <div class="portfolio__card" onclick="togglePortfolioOverlay()" data-portfolio-info="tiago">
                                 <div class="portfolio__card--image">
                                     <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
                                 </div>
@@ -139,7 +143,7 @@
                                 </div>
                             </div>
 
-                            <div class="portfolio__card" onclick="togglePortfolioOverlay()">
+                            <div class="portfolio__card" onclick="togglePortfolioOverlay()" data-portfolio-info="materiaAR">
                                 <div class="portfolio__card--image">
                                     <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
                                 </div>
@@ -149,7 +153,7 @@
                                 </div>
                             </div>
 
-                            <div class="portfolio__card" onclick="togglePortfolioOverlay()">
+                            <div class="portfolio__card" onclick="togglePortfolioOverlay()" data-portfolio-info="sketchApp">
                                 <div class="portfolio__card--image">
                                     <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
                                 </div>
@@ -159,7 +163,7 @@
                                 </div>
                             </div>
 
-                            <div class="portfolio__card" onclick="togglePortfolioOverlay()">
+                            <div class="portfolio__card" onclick="togglePortfolioOverlay()" data-portfolio-info="">
                                 <div class="portfolio__card--image">
                                     <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
                                 </div>
@@ -169,7 +173,7 @@
                                 </div>
                             </div>
 
-                            <div class="portfolio__card" onclick="togglePortfolioOverlay()">
+                            <div class="portfolio__card" onclick="togglePortfolioOverlay()" data-portfolio-info="voReel">
                                 <div class="portfolio__card--image">
                                     <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
                                 </div>
@@ -179,7 +183,7 @@
                                 </div>
                             </div>
 
-                            <div class="portfolio__card" onclick="togglePortfolioOverlay()">
+                            <div class="portfolio__card" onclick="togglePortfolioOverlay()" data-portfolio-info="videoReel">
                                 <div class="portfolio__card--image">
                                     <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
                                 </div>
@@ -211,7 +215,7 @@
 
                         <div class="testimonials__card">
                             <figure class="testimonials__picture">
-                                <img src="img/testimonials/dana.jpg" alt="Akash Thakkar testimonial image">
+                                <img src="img/testimonials/dana.jpg" alt="Dana Ritchie testimonial image">
                             </figure>
                             <div class="testimonials__text">
                                 <strong><p>Dana Ritchie - Emotional Enlightment Services Ltd.</p></strong>
@@ -224,7 +228,7 @@
                     <div class="testimonials__grid testimonials__grid--2">
                         <div class="testimonials__card">
                             <figure class="testimonials__picture">
-                                <img src="img/testimonials/kelly.jpg" alt="Akash Thakkar testimonial image">
+                                <img src="img/testimonials/kelly.jpg" alt="Dr. Kelly Bender testimonial image">
                             </figure>
                             <div class="testimonials__text">
                                 <strong><p>Dr. Kelly Bender, ND - Pure Vitality</p></strong>
@@ -234,7 +238,7 @@
 
                         <div class="testimonials__card">
                             <figure class="testimonials__picture">
-                                <img src="img/testimonials/drp.png" alt="Akash Thakkar testimonial image">
+                                <img src="img/testimonials/drp.png" alt="Dr. P testimonial image">
                             </figure>
                             <div class="testimonials__text">
                                 <strong><p>Dr. Wayne P - DynamicLeader</p></strong>
@@ -248,7 +252,9 @@
 
             <footer class="footer">
                 <div class="contact">
-                    Contact section. Available for work!
+                    <h1 class="contact__header">CONTACT</h1>
+                    <div class="contact__info" data-clipboard-text="jacob@jacobpernell.com">jacob@jacobpernell.com</div>
+                    <div class="contact__info--sub">(click to copy)</div>
                 </div>
             </footer>
             </div>

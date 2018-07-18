@@ -1,0 +1,52 @@
+.contact {
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-blue-dark);
+
+    &__header {
+        justify-content: center;
+        font-weight: 300;
+        font-size: 6rem;
+        letter-spacing: 1rem;
+        text-transform: uppercase;
+        padding: 0 2rem;
+        cursor: default;
+        color: var(--color-white);
+        border-bottom: 2px solid white;
+        margin-bottom: 3rem;
+    }
+
+    &__info {
+        font-weight: 300;
+        font-size: 4rem;
+        letter-spacing: 1rem;
+        text-transform: uppercase;
+        padding: 0 2rem;
+        cursor: pointer;
+        color: var(--color-white);
+        backface-visibility: hidden;
+        transition: all .2s;
+
+        &:hover {
+            transform: translateY(-.2rem);
+            color: var(--color-purple-light);
+            text-shadow: var(--shadow-dark);
+        }
+
+        &:active {
+            transform: translateY(.2rem);
+        }
+
+        &--sub {
+            font-weight: 300;
+            font-size: 2rem;
+            letter-spacing: 1rem;
+            text-transform: none;
+            cursor: default;
+            color: var(--color-white);
+        }
+    }
+}

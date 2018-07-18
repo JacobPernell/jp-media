@@ -25,13 +25,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 80rem;
     }
 
     &__card {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 70%;
+        width: 80%;
         padding: 4rem;
         background: var(--color-white);
         box-shadow: 0 3rem 6rem rgba(0,0,0,.1);
@@ -52,6 +53,7 @@
 
         img {
             height: 100%;
+            background-position: center;
         }
     }
 
