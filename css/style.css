@@ -402,24 +402,30 @@ body {
   .testimonials__grid {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    flex: 1; }
+    justify-content: center;
+    align-items: center; }
   .testimonials__card {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     width: 70%;
     padding: 4rem;
     background: var(--color-white);
     box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-    transform: skewX(-12deg); }
+    transform: skewX(-10deg); }
     .testimonials__card:not(:last-child) {
-      margin-bottom: 2rem; }
+      margin-bottom: 6rem; }
   .testimonials__picture {
-    width: 15rem;
+    width: 65rem;
     height: 15rem;
+    margin-right: 3rem;
     border-radius: 50%;
-    transform: skewX(12deg);
+    transform: skewX(10deg);
     overflow: hidden; }
+    .testimonials__picture img {
+      height: 100%; }
   .testimonials__text {
-    transform: skewX(12deg); }
+    transform: skewX(10deg); }
+    .testimonials__text strong p {
+      font-size: 1.9rem;
+      margin-bottom: .7rem; }

@@ -23,48 +23,44 @@
     &__grid {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
-        flex: 1;
     }
 
     &__card {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
         width: 70%;
         padding: 4rem;
         background: var(--color-white);
         box-shadow: 0 3rem 6rem rgba(0,0,0,.1);
-        transform: skewX(-12deg);
+        transform: skewX(-10deg);
 
         &:not(:last-child) {
-            margin-bottom: 2rem;
+            margin-bottom: 6rem;
         }
     }
 
     &__picture {
-        width: 15rem;
+        width: 65rem;
         height: 15rem;
+        margin-right: 3rem;
         border-radius: 50%;
-        transform: skewX(12deg);
+        transform: skewX(10deg);
         overflow: hidden;
 
-
-        // @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-        //   -webkit-clip-path: circle(50% at 50% 50%);
-        //   clip-path: circle(50% at 50% 50%);
-        //   -webkit-shape-outside: circle(50% at 50% 50%);
-        //   shape-outside: circle(50% at 50% 50%);
-        //   border-radius: none;
-        // }
-
         img {
-            // height: 100%;
-            //
+            height: 100%;
         }
     }
 
     &__text {
-        transform: skewX(12deg);
+        transform: skewX(10deg);
+
+        strong p {
+            font-size: 1.9rem;
+            margin-bottom: .7rem;
+        }
     }
 }
