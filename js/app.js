@@ -1,7 +1,14 @@
 const portfolioOverlay = document.querySelector('.portfolio__overlay');
 const portfolioOverlayTitle = document.querySelector('.portfolio__overlay--title');
 
-function togglePortfolioOverlay() {
+function togglePortfolioOverlay(e) {
+    portfolioOverlay.classList.toggle("open");
+
+    let portfolioItem = e.target.parentElement.parentElement.dataset.portfolioinfo;
+    console.log(e.target.parentElement.parentElement.dataset.portfolioinfo);
+}
+
+function closeOverlay() {
     portfolioOverlay.classList.toggle("open");
 }
 

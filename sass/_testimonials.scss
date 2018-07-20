@@ -36,7 +36,7 @@
         padding: 4rem;
         background: var(--color-white);
         box-shadow: 0 3rem 6rem rgba(0,0,0,.1);
-        transform: skewX(-10deg);
+        border-radius: .25rem;
 
         &:not(:last-child) {
             margin-bottom: 6rem;
@@ -48,18 +48,17 @@
         height: 15rem;
         margin-right: 3rem;
         border-radius: 50%;
-        transform: skewX(10deg);
         overflow: hidden;
 
         img {
             height: 100%;
             background-position: center;
+            object-fit: cover;
         }
     }
 
     &__text {
-        transform: skewX(10deg);
-
+        //
         strong p {
             font-size: 1.9rem;
             margin-bottom: .7rem;

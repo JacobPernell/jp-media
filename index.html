@@ -8,7 +8,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Alegreya:300,300i,400,700|Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png"> -->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/94/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.1/clipboard.min.js"></script>
@@ -20,7 +20,9 @@
     <div class="container">
 
         <header class="header">
-            <img src="img/jp-logo.png" alt="Jacob Pernell Media Logo" class="header__logo">
+            <object data="img/jpLogo-svg.svg" type="image/svg+xml" class="header__logo">
+                Your browser does not support SVG
+            </object>
 
             <nav class="header__nav">
                 <ul class="top-nav">
@@ -65,9 +67,9 @@
 
                 <section class="hero">
                     <div class="hero__container">
-                        <img src="img/hero-jacob.png" alt="Jacob Pernell hero image" class="hero__img">
+                        <img src="img/Jacob-outline.png" alt="Jacob Pernell hero image" class="hero__img">
                         <h1 class="hero__text">
-                            I'm <span>Jacob Pernell</span>, and I'm a digital media designer who helps artists, creatives, and entrepreneurs <span>tell their stories</span> and <span>bring their ideas to life.</span>
+                            I'm <span>Jacob Pernell</span>, and I'm a digital media designer who helps artists, creatives, & entrepreneurs <span>tell their stories</span> and <span>bring their ideas to life.</span>
                         </h1>
                     </div>
                     <a href="#" class="hero__learn-more">View Portfolio &rarr;</a>
@@ -89,13 +91,11 @@
                 <section class="services">
                     <div class="services__items">
                         <ul class="services__list">
-                            <li class="services__list--item">Web / UI / UX Design</li>
+                            <li class="services__list--item">Web Design</li>
+                            <li class="services__list--item">UI / UX Design</li>
                             <li class="services__list--item">Sonic Branding</li>
-                            <li class="services__list--item">Voice-Over Recording</li>
-                            <li class="services__list--item">Video Production & Motion Graphic Design</li>
+                            <li class="services__list--item">Video Production</li>
                             <li class="services__list--item">Digital Content Marketing</li>
-                            <li class="services__list--item">Kajabi Course Production</li>
-                            <li class="services__list--item">Augmented / Virtual Reality Development</li>
                         </ul>
                         <h1 class="services__header">SERVICES</h1>
                     </div>
@@ -103,8 +103,8 @@
 
                 <section class="portfolio">
                     <div class="portfolio__overlay">
-                        <span class="portfolio__overlay--close" onclick="togglePortfolioOverlay()">&larr;</span>
-                        <h1 class="portfolio__overlay--title"></h1>
+                        <span class="portfolio__overlay--close" onclick="closeOverlay()">&larr;</span>
+                        <h1 class="portfolio__overlay--title">asdfsadfasd</h1>
                         <div class="portfolio__overlay--image"></div>
                         <div class="portfolio__overlay--text"></div>
                     </div>
@@ -113,7 +113,7 @@
 
                         <div class="portfolio__grid">
 
-                            <div class="portfolio__card" onclick="togglePortfolioOverlay()" data-portfolio-info="musicReel">
+                            <div class="portfolio__card" onclick="togglePortfolioOverlay(event)" data-portfolioinfo="musicReel">
                                 <div class="portfolio__card--image">
                                     <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
                                 </div>
@@ -123,7 +123,7 @@
                                     </div>
                             </div>
 
-                            <div class="portfolio__card" onclick="togglePortfolioOverlay()" data-portfolio-info="alexMathew">
+                            <div class="portfolio__card" onclick="togglePortfolioOverlay(event)" data-portfolioinfo="alexMathew">
                                 <div class="portfolio__card--image">
                                     <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
                                 </div>
@@ -133,7 +133,7 @@
                                 </div>
                             </div>
 
-                            <div class="portfolio__card" onclick="togglePortfolioOverlay()" data-portfolio-info="tiago">
+                            <div class="portfolio__card" onclick="togglePortfolioOverlay(event)" data-portfolioinfo="tiago">
                                 <div class="portfolio__card--image">
                                     <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
                                 </div>
@@ -143,7 +143,7 @@
                                 </div>
                             </div>
 
-                            <div class="portfolio__card" onclick="togglePortfolioOverlay()" data-portfolio-info="materiaAR">
+                            <div class="portfolio__card" onclick="togglePortfolioOverlay(event)" data-portfolioinfo="materiaAR">
                                 <div class="portfolio__card--image">
                                     <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
                                 </div>
@@ -153,7 +153,7 @@
                                 </div>
                             </div>
 
-                            <div class="portfolio__card" onclick="togglePortfolioOverlay()" data-portfolio-info="sketchApp">
+                            <div class="portfolio__card" onclick="togglePortfolioOverlay(event)" data-portfolioinfo="sketchApp">
                                 <div class="portfolio__card--image">
                                     <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
                                 </div>
@@ -163,7 +163,7 @@
                                 </div>
                             </div>
 
-                            <div class="portfolio__card" onclick="togglePortfolioOverlay()" data-portfolio-info="">
+                            <div class="portfolio__card" onclick="togglePortfolioOverlay(event)" data-portfolioinfo="">
                                 <div class="portfolio__card--image">
                                     <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
                                 </div>
@@ -173,7 +173,7 @@
                                 </div>
                             </div>
 
-                            <div class="portfolio__card" onclick="togglePortfolioOverlay()" data-portfolio-info="voReel">
+                            <div class="portfolio__card" onclick="togglePortfolioOverlay(event)" data-portfolioinfo="voReel">
                                 <div class="portfolio__card--image">
                                     <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
                                 </div>
@@ -183,7 +183,7 @@
                                 </div>
                             </div>
 
-                            <div class="portfolio__card" onclick="togglePortfolioOverlay()" data-portfolio-info="videoReel">
+                            <div class="portfolio__card" onclick="togglePortfolioOverlay(event)" data-portfolioinfo="videoReel">
                                 <div class="portfolio__card--image">
                                     <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
                                 </div>
