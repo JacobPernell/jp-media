@@ -18,3 +18,5 @@ clipboard.on('success', function(e) {
     document.querySelector('.contact__info--sub').innerHTML = "Email copied!";
     e.clearSelection();
 });
+
+// particlesJS.load('particles-js', 'js/particles.json');
