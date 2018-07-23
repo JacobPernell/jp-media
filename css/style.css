@@ -1,7 +1,8 @@
 .about {
   display: flex;
   flex-direction: row;
-  align-items: center; }
+  align-items: center;
+  min-height: 80vh; }
   .about__image {
     max-height: 80vh;
     background-size: cover; }
@@ -16,10 +17,17 @@
     .about__bio p:not(:last-child) {
       padding-bottom: 3rem; }
   .about__header {
-    font-weight: 700;
-    font-size: 3.5rem;
-    margin-bottom: 2rem;
-    border-bottom: var(--line-black-thick); }
+    align-self: center;
+    font-weight: 300;
+    font-size: 6rem;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    padding: 0 2rem;
+    cursor: default;
+    color: var(--color-black);
+    border-right: 2px solid black;
+    writing-mode: vertical-lr;
+    text-orientation: upright; }
 
 @keyframes moveInLeft {
   0% {
@@ -327,12 +335,12 @@ body {
       .portfolio__card--info-type {
         font-size: 1.8rem;
         font-weight: 300;
-        letter-spacing: .2rem; }
+        letter-spacing: 0.2rem; }
       .portfolio__card--info-title {
         text-transform: uppercase;
         font-size: 2rem;
         font-weight: 400;
-        letter-spacing: .3rem; }
+        letter-spacing: 0.3rem; }
     .portfolio__card:hover {
       box-shadow: var(--shadow-dark);
       z-index: 100; }
@@ -371,20 +379,23 @@ body {
       transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1); }
     .portfolio__overlay--close {
       border-radius: 50%; }
-    .portfolio__overlay--title {
-      font-weight: 300;
-      font-size: 6rem;
-      letter-spacing: 1rem;
-      text-transform: uppercase;
-      padding-bottom: 2rem;
-      cursor: default;
-      color: var(--color-white);
-      border-bottom: 2px solid white;
-      z-index: 350;
-      transition: all .2s;
-      position: relative;
-      display: flex;
-      justify-content: center; }
+    .portfolio__overlay--container {
+      visibility: visible;
+      opacity: 1;
+      z-index: 350; }
+      .portfolio__overlay--container--title {
+        font-weight: 300;
+        font-size: 6rem;
+        letter-spacing: 1rem;
+        text-transform: uppercase;
+        padding-bottom: 2rem;
+        cursor: default;
+        color: var(--color-white);
+        border-bottom: 2px solid white;
+        transition: all 0.2s;
+        position: relative;
+        display: flex;
+        justify-content: center; }
     .portfolio__overlay.open {
       opacity: 1;
       visibility: visible;
@@ -404,7 +415,7 @@ body {
       border-radius: 50%;
       padding: 2rem;
       color: var(--color-white);
-      transition: all .2s;
+      transition: all 0.2s;
       position: relative;
       visibility: visible;
       opacity: 1;
