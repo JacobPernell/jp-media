@@ -91,33 +91,32 @@
 
                 <section class="services">
                     <div class="services__items">
-                        <ul class="services__list">
-                            <li class="services__list--item">Web Design</li>
-                            <li class="services__list--item">UI / UX Design</li>
-                            <li class="services__list--item">Sonic Branding</li>
-                            <li class="services__list--item">Video Production</li>
-                            <li class="services__list--item">Digital Content Marketing</li>
-                        </ul>
+                        <div class="services__group">
+                            <ul class="services__list">
+                                <li class="services__list--item" onmouseover="setServicesDisplay(event)" data-servicetype="web">Web Design</li>
+                                <li class="services__list--item" onmouseover="setServicesDisplay(event)" data-servicetype="ux">UI / UX Design</li>
+                                <li class="services__list--item" onmouseover="setServicesDisplay(event)" data-servicetype="audio">Sonic Branding</li>
+                                <li class="services__list--item" onmouseover="setServicesDisplay(event)" data-servicetype="video">Video Production</li>
+                                <li class="services__list--item" onmouseover="setServicesDisplay(event)" data-servicetype="marketing">Digital Content Marketing</li>
+                            </ul>
+                            <div class="services__info">
+                                <div class="services__info--title"></div>
+                                <div class="services__info--video"></div>
+                                <div class="services__info--text"></div>
+                            </div>
+                        </div>
                         <h1 class="services__header">SERVICES</h1>
                     </div>
                 </section>
 
                 <section class="portfolio">
-                    <div class="portfolio__overlay">
-                        <div class="portfolio__overlay--container">
-                            <span class="portfolio__overlay--close" onclick="closeOverlay()">&larr;</span>
-                            <h1 class="portfolio__overlay--title">asdfsadfasd</h1>
-                            <div class="portfolio__overlay--image"></div>
-                            <div class="portfolio__overlay--text"></div>
-                        </div>
-                    </div>
 
                     <div class="portfolio__container">
                         <h1 class="portfolio__header">PORTFOLIO</h1>
 
                         <div class="portfolio__grid">
 
-                            <div class="portfolio__card" onclick="togglePortfolioOverlay(event)" data-portfolioinfo="musicReel">
+                            <div class="portfolio__card">
                                 <div class="portfolio__card--image">
                                     <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
                                 </div>
