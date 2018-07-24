@@ -1,0 +1,30 @@
+.app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right bottom, var(--color-off-white), var(--color-off-white));
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90vw;
+    height: 100vh;
+}
+
+.content {
+    background-color: #FFF;
+    height: 80%;
+    width: 100%;
+    overflow-y: scroll;
+    box-shadow: var(--shadow-dark);
+}
+
+.main-content {
+    // width: 100%;
+
+}

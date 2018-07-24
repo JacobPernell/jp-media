@@ -1,0 +1,62 @@
+:root {
+
+    --color-white: #FFF;
+    --color-off-white: #FBFCFF;
+    --color-grey-light-1: #F9F9F9;
+    --color-grey-light-2: #F4F2F2;
+    --color-grey-light-3: #CCCCCC;
+    --color-grey-dark-1: #777;
+    --color-grey-dark-2: #333;
+    --color-black: #000;
+
+    --color-pink: #FEA8A9;
+    --color-pink-dark: #C44C96;
+    --color-purple-dark: #400E72;
+    --color-purple-light: #9E429D;
+    --color-blue-dark: #011638;
+    --color-blue-medium: #1C548F;
+    --color-blue-medium-2: #365B96;
+    --color-blue-light: #1C6E8C;
+    --color-yellow: #F9EC2F;
+
+    --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+    --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+
+    --drop-shadow: drop-shadow(-1rem 0 2rem rgba(0,0,0,.3));
+
+    --line: 1px solid var(--color-grey-light-2);
+    --line-black-thick: 2px solid var(--color-black);
+}
+
+// FONT VARIABLES
+$font-primary: 'Lato', sans-serif;
+$font-serif: 'Alegreya', serif;
+
+// BREAKPOINTS
+$bp-largest: 75em;         // 1200px - 1200/16
+$bp-large: 68.75em;        // 1100px
+$bp-medium: 56.25em;       // 900px
+$bp-small: 37.5em;         // 600px
+$bp-smallest: 31.25em;     // 500px
+$bp-phone: 26.25em;        // 420px
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+    font-family: $font-primary;
+    color: #000;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 1.6rem;
+}

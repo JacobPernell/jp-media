@@ -2,9 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to right bottom, var(--color-off-white), var(--color-off-white));
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: var(--color-off-white);
 }
 
 .container {
@@ -12,19 +10,12 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 90vw;
+    width: 100vw;
     height: 100vh;
 }
 
 .content {
     background-color: #FFF;
-    height: 80%;
+    height: 100%;
     width: 100%;
-    overflow-y: scroll;
-    box-shadow: var(--shadow-dark);
-}
-
-.main-content {
-    // width: 100%;
-
 }

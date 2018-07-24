@@ -1,5 +1,6 @@
 const portfolioOverlay = document.querySelector('.portfolio__overlay');
 const portfolioOverlayTitle = document.querySelector('.portfolio__overlay--title');
+const navBar = document.querySelector('.header');
 
 function togglePortfolioOverlay(e) {
     portfolioOverlay.classList.toggle("open");
@@ -19,4 +20,13 @@ clipboard.on('success', function(e) {
     e.clearSelection();
 });
 
-// particlesJS.load('particles-js', 'js/particles.json');
+window.onscroll = function () {
+    if (window.pageYOffset > 75 ) {
+        navBar.classList.add("nav-colored");
+        navBar.classList.remove("nav-transparent");
+    }
+    else {
+        navBar.classList.add("nav-transparent");
+        navBar.classList.remove("nav-colored");
+    }
+};

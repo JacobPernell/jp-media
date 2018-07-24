@@ -4,17 +4,24 @@
     align-items: center;
     min-height: 80vh;
 
-    &__image {
-        max-height: 80vh;
-        background-size: cover;
-    }
+    // &:before {
+    //     // min-height: 80vh;
+    //     content: "";
+    //     position: fixed;
+    //     background-image: url(../img/ocean.jpg);
+    //     background-size: cover;
+    //     background-attachment: fixed;
+    //     filter: blur(2rem);
+    // }
 
     &__bio {
+        font-size: 2rem;
+        font-weight: 300;
+        letter-spacing: 0.1rem;
         margin: auto;
         padding: 0 4rem;
         max-width: 60%;
         text-align: justify;
-
         display: flex;
         flex-direction: column;
         justify-content: center;

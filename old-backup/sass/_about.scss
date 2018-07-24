@@ -1,0 +1,42 @@
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 80vh;
+
+    &__image {
+        max-height: 80vh;
+        background-size: cover;
+    }
+
+    &__bio {
+        margin: auto;
+        padding: 0 4rem;
+        max-width: 60%;
+        text-align: justify;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+            &:not(:last-child) {
+                padding-bottom: 3rem;
+            }
+        }
+    }
+
+    &__header {
+        align-self: center;
+        font-weight: 300;
+        font-size: 6rem;
+        letter-spacing: 1rem;
+        text-transform: uppercase;
+        padding: 0 2rem;
+        cursor: default;
+        color: var(--color-black);
+        border-right: 2px solid black;
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+    }
+}

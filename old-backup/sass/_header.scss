@@ -1,0 +1,59 @@
+.header {
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+
+    &__nav {
+        font-weight: 700;
+        font-size: 1.6rem;
+
+        .top-nav {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 40vw;
+
+            &__item {
+                //
+            }
+
+            &__link {
+                display: inline-block;
+
+                &:link,
+                &:visited {
+                    color: var(--color-black);
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 0;
+                    height: 2px;
+                    background: var(--color-black);
+                    transition: width .2s ease-out;
+                }
+
+                &:hover::after,
+                &:focus {
+                    width: 100%;
+                    // outline: none;
+                }
+            }
+        }
+    }
+
+    &__logo {
+        fill: var(--color-black);
+        height: 8rem;
+        padding-bottom: 1.5rem;
+    }
+}

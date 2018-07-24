@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Alegreya:300,300i,400,700|Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/94/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.1/clipboard.min.js"></script>
+
+    <title>Jacob Pernell Media</title>
+</head>
+
+<body class="app">
+    <div class="container">
+
+        <header class="header">
+            <object data="img/jpLogo-svg.svg" type="image/svg+xml" class="header__logo">
+                Your browser does not support SVG
+            </object>
+
+            <nav class="header__nav">
+                <ul class="top-nav">
+
+                    <li class="top-nav__item">
+                        <a href="#" class="top-nav__link">
+                            ABOUT
+                        </a>
+                    </li>
+
+                    <li class="top-nav__item">
+                        <a href="#" class="top-nav__link">
+                            SERVICES
+                        </a>
+                    </li>
+
+                    <li class="top-nav__item">
+                        <a href="#" class="top-nav__link">
+                            PORTFOLIO
+                        </a>
+                    </li>
+
+                    <li class="top-nav__item">
+                        <a href="#" class="top-nav__link">
+                            TESTIMONIALS
+                        </a>
+                    </li>
+
+                    <li class="top-nav__item">
+                        <a href="#" class="top-nav__link">
+                            CONTACT
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content">
+
+            <main class="main-content">
+
+                <section class="hero">
+                    <div class="hero__container">
+                        <img src="img/Jacob-outline.png" alt="Jacob Pernell hero image" class="hero__img">
+                        <div id="particles-js"></div>
+                        <h1 class="hero__text">
+                            <div>I'm <span>Jacob Pernell</span>, and I'm a digital media designer who helps artists, creatives, & entrepreneurs <span>tell their stories</span> and <span>bring their ideas to life.</span></div>
+                            <div><button class="hero__cta"><a href="#">Let's create something together <span>&rarr;</span></a></button></div>
+                        </h1>
+
+                    </div>
+                    <a href="#" class="hero__learn-more">View Portfolio &rarr;</a>
+                </section>
+
+                <section class="about">
+                    <h1 class="about__header">ABOUT</h1>
+                    <div class="about__bio">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eum, molestiae, reprehenderit, harum commodi debitis iure excepturi repudiandae officiis rem nemo quas, pariatur recusandae maiores ut ipsa amet consectetur
+                            minima. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eum, molestiae, reprehenderit, harum commodi debitis iure excepturi repudiandae officiis rem nemo quas, pariatur recusandae maiores ut ipsa amet
+                            consectetur minima.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eum, molestiae, reprehenderit, harum commodi debitis iure excepturi repudiandae officiis rem nemo quas, pariatur recusandae maiores ut ipsa amet consectetur
+                            minima. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eum, molestiae, reprehenderit, harum commodi debitis iure excepturi repudiandae officiis rem nemo quas, pariatur recusandae maiores ut ipsa amet
+                            consectetur minima.</p>
+                    </div>
+                    <!-- <img src="img/profile.jpg" alt="Picture of Jacob" class="about__image"> -->
+                </section>
+
+                <section class="services">
+                    <div class="services__items">
+                        <ul class="services__list">
+                            <li class="services__list--item">Web Design</li>
+                            <li class="services__list--item">UI / UX Design</li>
+                            <li class="services__list--item">Sonic Branding</li>
+                            <li class="services__list--item">Video Production</li>
+                            <li class="services__list--item">Digital Content Marketing</li>
+                        </ul>
+                        <h1 class="services__header">SERVICES</h1>
+                    </div>
+                </section>
+
+                <section class="portfolio">
+                    <div class="portfolio__overlay">
+                        <div class="portfolio__overlay--container">
+                            <span class="portfolio__overlay--close" onclick="closeOverlay()">&larr;</span>
+                            <h1 class="portfolio__overlay--title">asdfsadfasd</h1>
+                            <div class="portfolio__overlay--image"></div>
+                            <div class="portfolio__overlay--text"></div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__container">
+                        <h1 class="portfolio__header">PORTFOLIO</h1>
+
+                        <div class="portfolio__grid">
+
+                            <div class="portfolio__card" onclick="togglePortfolioOverlay(event)" data-portfolioinfo="musicReel">
+                                <div class="portfolio__card--image">
+                                    <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
+                                </div>
+                                <div class="portfolio__card--info">
+                                    <div class="portfolio__card--info-type"><em>Reel</em></div>
+                                    <div class="portfolio__card--info-title">Sonic Branding & Music</div>
+                                </div>
+                            </div>
+
+                            <div class="portfolio__card" onclick="togglePortfolioOverlay(event)" data-portfolioinfo="alexMathew">
+                                <div class="portfolio__card--image">
+                                    <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
+                                </div>
+                                <div class="portfolio__card--info">
+                                    <div class="portfolio__card--info-type"><em>Website Design</em></div>
+                                    <div class="portfolio__card--info-title">Alexander Mathew - Game Designer</div>
+                                </div>
+                            </div>
+
+                            <div class="portfolio__card" onclick="togglePortfolioOverlay(event)" data-portfolioinfo="tiago">
+                                <div class="portfolio__card--image">
+                                    <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
+                                </div>
+                                <div class="portfolio__card--info">
+                                    <div class="portfolio__card--info-type"><em>Website Design</em></div>
+                                    <div class="portfolio__card--info-title">Tiago MC Rodrigues - Composer</div>
+                                </div>
+                            </div>
+
+                            <div class="portfolio__card" onclick="togglePortfolioOverlay(event)" data-portfolioinfo="materiaAR">
+                                <div class="portfolio__card--image">
+                                    <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
+                                </div>
+                                <div class="portfolio__card--info">
+                                    <div class="portfolio__card--info-type"><em>Augmented Reality App</em></div>
+                                    <div class="portfolio__card--info-title">Materia Collective</div>
+                                </div>
+                            </div>
+
+                            <div class="portfolio__card" onclick="togglePortfolioOverlay(event)" data-portfolioinfo="sketchApp">
+                                <div class="portfolio__card--image">
+                                    <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
+                                </div>
+                                <div class="portfolio__card--info">
+                                    <div class="portfolio__card--info-type"><em>App Prototype</em></div>
+                                    <div class="portfolio__card--info-title">Sketch App</div>
+                                </div>
+                            </div>
+
+                            <div class="portfolio__card" onclick="togglePortfolioOverlay(event)" data-portfolioinfo="">
+                                <div class="portfolio__card--image">
+                                    <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
+                                </div>
+                                <div class="portfolio__card--info">
+                                    <div class="portfolio__card--info-type"><em>???</em></div>
+                                    <div class="portfolio__card--info-title">???????</div>
+                                </div>
+                            </div>
+
+                            <div class="portfolio__card" onclick="togglePortfolioOverlay(event)" data-portfolioinfo="voReel">
+                                <div class="portfolio__card--image">
+                                    <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
+                                </div>
+                                <div class="portfolio__card--info">
+                                    <div class="portfolio__card--info-type"><em>Reel</em></div>
+                                    <div class="portfolio__card--info-title">Voice Over</div>
+                                </div>
+                            </div>
+
+                            <div class="portfolio__card" onclick="togglePortfolioOverlay(event)" data-portfolioinfo="videoReel">
+                                <div class="portfolio__card--image">
+                                    <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
+                                </div>
+                                <div class="portfolio__card--info">
+                                    <div class="portfolio__card--info-type"><em>Reel</em></div>
+                                    <div class="portfolio__card--info-title">Video Editing & Motion Graphic Design</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- <button class="portfolio__button">
+                        View Full Portfolio <span class="right-arrow">&rarr;</span>
+                    </button> -->
+                </section>
+
+                <section class="testimonials">
+                    <div class="testimonials__grid testimonials__grid--1">
+                        <div class="testimonials__card">
+                            <figure class="testimonials__picture">
+                                <img src="img/testimonials/akash.jpg" alt="Akash Thakkar testimonial image">
+                            </figure>
+                            <div class="testimonials__text">
+                                <strong><p>Akash Thakkar - Composer/Sound Designer</p></strong>
+                                <p>"Jacob completely overdelivered. The design and animation he made for me perfectly suited my tone, brand, and the kind of energy I want to convey to my viewers. To anyone looking for digital media services and design work,
+                                    I highly recommend him!"</p>
+                            </div>
+                        </div>
+
+                        <div class="testimonials__card">
+                            <figure class="testimonials__picture">
+                                <img src="img/testimonials/dana.jpg" alt="Dana Ritchie testimonial image">
+                            </figure>
+                            <div class="testimonials__text">
+                                <strong><p>Dana Ritchie - Emotional Enlightment Services Ltd.</p></strong>
+                                <p>"Working with Jacob was my pleasure. He is very good at what he does. Very dependable, clear communicator. Creates great music. He has a great feel for tasks assigned and I would recommend him without a doubt."</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <h1 class="testimonials__header">Testimonials</h1>
+                    <div class="testimonials__grid testimonials__grid--2">
+                        <div class="testimonials__card">
+                            <figure class="testimonials__picture">
+                                <img src="img/testimonials/kelly.jpg" alt="Dr. Kelly Bender testimonial image">
+                            </figure>
+                            <div class="testimonials__text">
+                                <strong><p>Dr. Kelly Bender, ND - Pure Vitality</p></strong>
+                                <p>"Jacob is an amazing digital wizard! When I got his email with my animated logo I couldn't stop smiling! My staff and business partner were blown away. I can't recommend him highly enough!"</p>
+                            </div>
+                        </div>
+
+                        <div class="testimonials__card">
+                            <figure class="testimonials__picture">
+                                <img src="img/testimonials/drp.png" alt="Dr. P testimonial image">
+                            </figure>
+                            <div class="testimonials__text">
+                                <strong><p>Dr. Wayne P - DynamicLeader</p></strong>
+                                <p>"My DynamicLeader® programs were taken online as Jacob worked his magic. I went from having ideas to getting not just one course, but two, plus a membership program up and running in a short time and affordable rate. The
+                                    feeling of waking up to emails telling you that people have been purchasing your programs while you've been sleeping is exhilarating. Don't wait. JacobPernell.media is the right choice for your music, your video editing,
+                                    and for your online courses."</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+
+            <footer class="footer">
+                <div class="contact">
+                    <h1 class="contact__header">CONTACT</h1>
+                    <div class="contact__info" data-clipboard-text="jacob@jacobpernell.com">jacob@jacobpernell.com</div>
+                    <div class="contact__info--sub">(click to copy)</div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- <script src="js/services3d.js"></script> -->
+    <!-- <script src="js/particles.js"></script> -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

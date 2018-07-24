@@ -7,36 +7,34 @@
     z-index: 50;
 
     &__container {
-        height: 80vh;
+        height: 100vh;
         background-color: var(--color-pink);
         display: flex;
         flex-direction: row;
-        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-            clip-path: polygon(0 0, 100% 0, 100% 80%, 60% 100%, 0 100%);
-        }
-
-        .particles-js {
-            width: 100%;
-            height: 100%;
-        }
+        overflow: hidden;
     }
 
     &__img {
-        height: 90%;
-        filter: var(--drop-shadow);
-        transform: translate(5rem, 8rem);
+        width: 100%;
+        object-fit: cover;
+        transform: translate(-7rem, 1rem) scale(1.08);
     }
 
     &__text {
-        width: 45%;
+        position: absolute;
+        top: 30rem;
+        right: 15rem;
+        width: 35%;
         font-family: $font-serif;
         font-size: 4.5rem;
-        color: #FFF;
+        color: var(--color-black);
         align-self: center;
         font-weight: 400;
+        margin-left: -5rem;
         padding-left: 5rem;
         padding-bottom: 5rem;
         animation: fadeIn 0.7s ease-out;
+        // transform: rotate(3deg);
 
         span {
             font-weight: 700;
@@ -45,16 +43,18 @@
 
     &__cta {
         font-size: 2rem;
-        font-family: $font-serif;
+        font-family: $font-primary;
+        font-weight: 400;
+        letter-spacing: .4rem;
         text-transform: uppercase;
+        padding-bottom: 2rem;
         background: none;
-        color: var(--color-white);
         border: none;
 
         a {
             &:link,
             &:visited {
-                color: var(--color-white);
+                color: var(--color-black);
                 text-decoration: none;
                 text-transform: uppercase;
             }
@@ -63,14 +63,24 @@
         &::after {
             content: "";
             display: block;
-            width: 0;
+            width: 33%;
             height: 2px;
-            background: var(--color-white);
+            margin-top: .5rem;
+            background: var(--color-black);
             transition: width 0.2s ease-out;
         }
 
         &:hover::after {
             width: 100%;
+        }
+
+        span {
+            padding-left: 0;
+            transition: padding .2s ease-out;
+        }
+
+        &:hover span {
+            padding-left: .5rem;
         }
     }
 
@@ -79,15 +89,17 @@
         height: 20%;
         text-transform: uppercase;
         text-decoration: none;
-        font-weight: 300;
-        letter-spacing: 0.1rem;
-        background-color: var(--color-blue-dark);
+        font-size: 2rem;
+        font-weight: 400;
+        letter-spacing: 0.3rem;
+        background-color: rgba($color-blue-dark, .6);
         z-index: 100;
+
         display: flex;
         align-self: flex-end;
         justify-content: flex-end;
         align-items: center;
-        padding-top: 3rem;
+        padding-top: 5rem;
         padding-right: 5rem;
         position: absolute;
         left: 60%;
@@ -102,7 +114,7 @@
         }
 
         &:hover {
-            background-color: var(--color-blue-medium-2);
+            background-color: rgba($color-blue-dark, .8);
             color: var(--color-white);
             height: 22%;
         }
