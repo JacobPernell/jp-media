@@ -86,3 +86,40 @@ window.onscroll = function () {
         navBar.classList.remove("nav-colored");
     }
 };
+
+// Navbar click to scroll
+$(".top-nav__link--about").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".about").offset().top-$('.header').outerHeight()+20},
+        'slow');
+});
+$(".top-nav__link--services").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".services").offset().top-$('.header').outerHeight()+20},
+        'slow');
+});
+$(".top-nav__link--portfolio").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".portfolio").offset().top-$('.header').outerHeight()+20},
+        'slow');
+});
+$(".hero__learn-more").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".portfolio").offset().top-$('.header').outerHeight()+20},
+        'slow');
+});
+$(".top-nav__link--testimonials").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".testimonials").offset().top-$('.header').outerHeight()+20},
+        'slow');
+});
+$(".top-nav__link--contact").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".contact").offset().top-$('.header').outerHeight()},
+        'slow');
+});
+$(".hero__cta").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".contact").offset().top-$('.header').outerHeight()},
+        'slow');
+});

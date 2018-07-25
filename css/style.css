@@ -295,10 +295,9 @@ body {
   background-color: var(--color-white);
   min-height: 90vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  position: relative;
   overflow: hidden; }
   .portfolio__header {
     align-self: center;
@@ -311,61 +310,43 @@ body {
     color: var(--color-black);
     border-right: 2px solid black;
     writing-mode: vertical-lr;
-    text-orientation: upright; }
-  .portfolio__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    text-orientation: upright;
     position: sticky; }
   .portfolio__grid {
-    margin: 0 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; }
-  .portfolio__card {
     display: flex;
     flex-direction: column;
-    width: 25%;
-    justify-content: flex-end;
-    align-items: center;
-    opacity: 1;
-    position: relative;
-    transition: all 0.2s;
-    z-index: 50;
-    overflow: hidden; }
-    .portfolio__card--image {
-      margin-bottom: -.65rem; }
-      .portfolio__card--image img {
-        background-position: center;
-        background-size: cover;
-        max-width: 100%;
-        transition: all 0.2s; }
-    .portfolio__card--info {
-      position: absolute;
+    margin: auto; }
+  .portfolio__card {
+    flex-direction: row;
+    width: 80%;
+    margin: 5rem auto; }
+    .portfolio__card--title {
       font-family: "Quattrocento", serif;
-      color: var(--color-white);
-      left: 2rem;
-      bottom: 2rem;
-      text-align: left;
-      text-shadow: 2px 2px 2px #000000; }
-      .portfolio__card--info-type {
-        font-size: 1.8rem;
-        font-weight: 300;
-        letter-spacing: 0.2rem; }
-      .portfolio__card--info-title {
-        text-transform: uppercase;
-        font-size: 2rem;
-        font-weight: 400;
-        letter-spacing: 0.3rem; }
-    .portfolio__card:hover {
-      box-shadow: var(--shadow-dark);
-      z-index: 100; }
-    .portfolio__card:hover .portfolio__card--image img {
-      transform: scale(1.1); }
-    .portfolio__card:active {
-      transform: scale(1.01); }
+      padding-right: 1rem;
+      margin-bottom: 3rem;
+      text-align: left; }
+      .portfolio__card--title-heading {
+        font-size: 7rem;
+        margin-bottom: -2rem; }
+      .portfolio__card--title-subheading {
+        font-size: 4rem;
+        font-style: italic; }
+    .portfolio__card--info {
+      border-left: 2px solid black;
+      padding-left: 3rem;
+      font-size: 2rem;
+      letter-spacing: .1rem; }
+      .portfolio__card--info-img-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%; }
+        .portfolio__card--info-img-area img {
+          width: 50%;
+          object-fit: contain; }
+      .portfolio__card--info-text p:not(:last-child) {
+        margin-bottom: 2rem; }
 
 .services {
   background-color: var(--color-blue-dark);

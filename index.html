@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/94/three.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/94/three.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.1/clipboard.min.js"></script>
 
     <title>Jacob Pernell Media</title>
@@ -28,31 +29,31 @@
                 <ul class="top-nav">
 
                     <li class="top-nav__item">
-                        <a href="#" class="top-nav__link">
+                        <a href="#" class="top-nav__link top-nav__link--about">
                             ABOUT
                         </a>
                     </li>
 
                     <li class="top-nav__item">
-                        <a href="#" class="top-nav__link">
+                        <a href="#" class="top-nav__link top-nav__link--services">
                             SERVICES
                         </a>
                     </li>
 
                     <li class="top-nav__item">
-                        <a href="#" class="top-nav__link">
+                        <a href="#" class="top-nav__link top-nav__link--portfolio">
                             PORTFOLIO
                         </a>
                     </li>
 
                     <li class="top-nav__item">
-                        <a href="#" class="top-nav__link">
+                        <a href="#" class="top-nav__link top-nav__link--testimonials">
                             TESTIMONIALS
                         </a>
                     </li>
 
                     <li class="top-nav__item">
-                        <a href="#" class="top-nav__link">
+                        <a href="#" class="top-nav__link top-nav__link--contact">
                             CONTACT
                         </a>
                     </li>
@@ -110,95 +111,29 @@
                 </section>
 
                 <section class="portfolio">
-
-                    <div class="portfolio__container">
                         <h1 class="portfolio__header">PORTFOLIO</h1>
 
                         <div class="portfolio__grid">
 
                             <div class="portfolio__card">
-                                <div class="portfolio__card--image">
-                                    <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
+                                <div class="portfolio__card--title">
+                                    <div class="portfolio__card--title-heading">Jacob Pernell Media</div>
+                                    <div class="portfolio__card--title-subheading">Website Redesign</div>
                                 </div>
                                 <div class="portfolio__card--info">
-                                    <div class="portfolio__card--info-type"><em>Reel</em></div>
-                                    <div class="portfolio__card--info-title">Sonic Branding & Music</div>
-                                </div>
-                            </div>
-
-                            <div class="portfolio__card" onclick="togglePortfolioOverlay(event)" data-portfolioinfo="alexMathew">
-                                <div class="portfolio__card--image">
-                                    <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
-                                </div>
-                                <div class="portfolio__card--info">
-                                    <div class="portfolio__card--info-type"><em>Website Design</em></div>
-                                    <div class="portfolio__card--info-title">Alexander Mathew - Game Designer</div>
-                                </div>
-                            </div>
-
-                            <div class="portfolio__card" onclick="togglePortfolioOverlay(event)" data-portfolioinfo="tiago">
-                                <div class="portfolio__card--image">
-                                    <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
-                                </div>
-                                <div class="portfolio__card--info">
-                                    <div class="portfolio__card--info-type"><em>Website Design</em></div>
-                                    <div class="portfolio__card--info-title">Tiago MC Rodrigues - Composer</div>
-                                </div>
-                            </div>
-
-                            <div class="portfolio__card" onclick="togglePortfolioOverlay(event)" data-portfolioinfo="materiaAR">
-                                <div class="portfolio__card--image">
-                                    <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
-                                </div>
-                                <div class="portfolio__card--info">
-                                    <div class="portfolio__card--info-type"><em>Augmented Reality App</em></div>
-                                    <div class="portfolio__card--info-title">Materia Collective</div>
-                                </div>
-                            </div>
-
-                            <div class="portfolio__card" onclick="togglePortfolioOverlay(event)" data-portfolioinfo="sketchApp">
-                                <div class="portfolio__card--image">
-                                    <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
-                                </div>
-                                <div class="portfolio__card--info">
-                                    <div class="portfolio__card--info-type"><em>App Prototype</em></div>
-                                    <div class="portfolio__card--info-title">Sketch App</div>
-                                </div>
-                            </div>
-
-                            <div class="portfolio__card" onclick="togglePortfolioOverlay(event)" data-portfolioinfo="">
-                                <div class="portfolio__card--image">
-                                    <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
-                                </div>
-                                <div class="portfolio__card--info">
-                                    <div class="portfolio__card--info-type"><em>???</em></div>
-                                    <div class="portfolio__card--info-title">???????</div>
-                                </div>
-                            </div>
-
-                            <div class="portfolio__card" onclick="togglePortfolioOverlay(event)" data-portfolioinfo="voReel">
-                                <div class="portfolio__card--image">
-                                    <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
-                                </div>
-                                <div class="portfolio__card--info">
-                                    <div class="portfolio__card--info-type"><em>Reel</em></div>
-                                    <div class="portfolio__card--info-title">Voice Over</div>
-                                </div>
-                            </div>
-
-                            <div class="portfolio__card" onclick="togglePortfolioOverlay(event)" data-portfolioinfo="videoReel">
-                                <div class="portfolio__card--image">
-                                    <img src="img/portfolio/portfolio-1.png" alt="Portfolio thumbnail image">
-                                </div>
-                                <div class="portfolio__card--info">
-                                    <div class="portfolio__card--info-type"><em>Reel</em></div>
-                                    <div class="portfolio__card--info-title">Video Editing & Motion Graphic Design</div>
+                                    <div class="portfolio__card--info-text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quibusdam ab consequatur perferendis vero. Explicabo animi, necessitatibus dolor. Iste recusandae ullam aut illo omnis, ipsum temporibus maxime ex fuga praesentium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque laborum labore doloribus impedit expedita facilis sequi, sint blanditiis, distinctio asperiores consequuntur officiis velit aut, dolorem magni, neque obcaecati fugiat placeat.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quibusdam ab consequatur perferendis vero. Explicabo animi, necessitatibus dolor. Iste recusandae ullam aut illo omnis, ipsum temporibus maxime ex fuga praesentium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque laborum labore doloribus impedit expedita facilis sequi, sint blanditiis, distinctio asperiores consequuntur officiis velit aut, dolorem magni, neque obcaecati fugiat placeat.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="portfolio__card--info-img-area">
+                                        <img src="img/portfolio/portfolio-1.png" alt="" class="portfolio__card--info-img">
+                                        <img src="img/portfolio/portfolio-1.png" alt="" class="portfolio__card--info-img">
+                                        <img src="img/portfolio/portfolio-1.png" alt="" class="portfolio__card--info-img">
+                                    </div>
                                 </div>
                             </div>
 
                         </div>
-
-                    </div>
                     <!-- <button class="portfolio__button">
                         View Full Portfolio <span class="right-arrow">&rarr;</span>
                     </button> -->
