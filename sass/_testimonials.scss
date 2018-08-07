@@ -1,6 +1,6 @@
 .testimonials {
     background-color: var(--color-blue-medium);
-    height: 80vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -11,11 +11,10 @@
         font-size: 4rem;
         letter-spacing: 1rem;
         text-transform: uppercase;
-        padding: 0 2rem;
+        padding-left: 2rem;
         cursor: default;
         color: var(--color-white);
         border-left: 2px solid white;
-        border-right: 2px solid white;
         writing-mode: vertical-lr;
         text-orientation: upright;
     }
