@@ -1,4 +1,6 @@
 .about {
+    background-color: white;
+    // color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -17,14 +19,32 @@
     &__bio {
         font-size: 2rem;
         font-weight: 300;
-        letter-spacing: 0.1rem;
+        letter-spacing: 0.18rem;
         margin: auto;
-        padding: 0 4rem;
+        padding: 3rem 4rem;
         max-width: 60%;
         text-align: justify;
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        &-centered {
+            text-align: center;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        &--line {
+            margin: auto;
+            width: 20vw;
+            padding-top: 2rem;
+            border-bottom: 2px solid black;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--color-black);
+        }
 
         p {
             &:not(:last-child) {
@@ -42,7 +62,7 @@
         padding: 0 2rem;
         cursor: default;
         color: var(--color-black);
-        border-right: 2px solid black;
+        border-left: 2px solid black;
         writing-mode: vertical-lr;
         text-orientation: upright;
     }

@@ -1,5 +1,4 @@
 .portfolio {
-    background-color: var(--color-white);
     min-height: 90vh;
     display: flex;
     flex-direction: row;
@@ -22,17 +21,19 @@
         position: sticky;
     }
 
-    &__grid {
-        // margin: 0 2rem;
+    &__list {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
         margin: auto;
     }
 
     &__card {
         // display: flex;
         flex-direction: row;
-        width: 80%;
+        justify-content: space-around;
+        width: 100%;
+        padding: 0 5rem;
         margin: 5rem auto;
 
         &--title {
@@ -40,45 +41,91 @@
             padding-right: 1rem;
             margin-bottom: 3rem;
             text-align: left;
+            flex: 1;
 
             &-heading {
-                font-size: 7rem;
+                font-size: 5rem;
                 margin-bottom: -2rem;
             }
 
             &-subheading {
-                font-size: 4rem;
+                font-size: 3rem;
                 font-style: italic;
             }
 
         }
 
         &--info {
-            border-left: 2px solid black;
             padding-left: 3rem;
             font-size: 2rem;
             letter-spacing: .1rem;
 
             &-img-area {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
                 width: 100%;
 
                 img {
-                    width: 50%;
-                    // height: 50%;
+                    width: 100%;
                     object-fit: contain;
                 }
 
-            }
-
-            &-text {
-                p:not(:last-child) {
-                    margin-bottom: 2rem;
-                }
+                // &:hover > img {
+                //     transform: scale(1.1);
+                // }
             }
         }
     }
+
+    &__cta {
+        font-size: 2rem;
+        font-family: $font-primary;
+        font-weight: 400;
+        letter-spacing: .4rem;
+        text-transform: uppercase;
+        padding: 1rem 0 2rem .5rem;
+        background: none;
+        border: none;
+
+        a {
+            &:link,
+            &:visited {
+                color: var(--color-black);
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 33%;
+            height: 2px;
+            margin-top: .5rem;
+            background: var(--color-black);
+            transition: width 0.2s ease-out;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+
+        span {
+            padding-left: 0;
+            transition: padding .2s ease-out;
+        }
+
+        &:hover span {
+            padding-left: .5rem;
+        }
+    }
+}
+
+.overlay {
+    content: "";
+    width: 0;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: 5000;
 }
