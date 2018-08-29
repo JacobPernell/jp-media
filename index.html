@@ -17,12 +17,82 @@
 </head>
 
 <body class="app">
-    <div class="overlay">
+    <!-- <div class="overlay">
         <button class="overlay_close" onclick="showPortfolioOverlay()"></button>
-        <section class="overlay_materia">Materia</section>
-        <section class="overlay_todoist">todoist</section>
-        <section class="overlay_creatutor">Creatutor</section>
+        <div class="overlay_content">
+            dsafkjlksdjflkj
+            <section class="overlay_materia">Materia</section>
+            <section class="overlay_todoist">todoist</section>
+            <section class="overlay_creatutor">Creatutor</section>
+        </div>
+    </div> -->
+
+    <div id="portOverlay" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <section class="overlay-content_materia">
+                <div class="overlay-content--title">
+                    <div class="overlay-content--title-heading">Materia Collective</div>
+                    <div class="overlay-content--title-subheading">Mobile App Prototype</div>
+                </div>
+                <!-- <video src="/img/portfolio/materia/materiaApp.mp4" type="video/mp4" class="overlay-content_video" controls> -->
+
+                <p>The Materia Collective is an online community of over 600 musicians, arrangers, and composers from around the world who frequently collaborate to produce licensed cover songs for video game music. Since its inception back in 2015 by founder
+                    Sebastian Wolff, the Collective has grown much larger than being just a cover song community. Among many other things, the Materia Collective now serves to help video game composers distribute their music to the world, as well as ensure
+                    that the royalties for their art are collected and paid out appropriately.</p>
+
+                <p>Sebastian (who, full disclosure, is a good friend of mine) is currently developing a backend dashboard for the Materia Collective. This dashboard is powerful, as it automates the process of managing the artists and their albums in the
+                    database, collecting and distributing the artist’s royalties every month, and at least 1000 other black-magic music rights and royalties-related things that I don’t fully understand yet.</p>
+
+                <p>While there’s a lot of functionality in place since Sebastian has been working on this system for many long days and sleepless nights, it’s still not complete, and thus not publicly available to the Materia Collective community. As he
+                    pushes closer and closer to completion however, I projected ahead and thought it could serve hundreds of artists if there were a mobile app that worked in tandem with the website that allowed people to log into their Materia Dashboard
+                    account. I wondered:</p>
+
+                <p class="quote">“What would a Materia Dashboard mobile app look like, and how could it empower Materia Collective users?”</p>
+
+                <p>In addition to the question above, I was curious to explore a new design tool I had yet to touch: Adobe XD. So, after taking a short Udemy course on Adobe XD to learn the basics, I got to work!</p>
+
+                <p>Before I jumped in too far, I wanted to make sure I had the user in mind to make sure that I was going to design something that they would actually want to use. I talked to a few fellow Materia Collective members about my prototype idea
+                    and asked what they would like to see. The consensus after my survey, asking Materia members what they’d hope to see in an app like this, was that statistics and payout information were the most important features they’d like to see.
+                    With these notes in hand, I also went about exploring what some similar apps offer for their functionality. The two apps I found that were closest to what I was hoping to create were the Bandcamp Artists and Spotify Artists mobile
+                    apps, given their statistics and listener demographics features.</p>
+
+                <p>I spent some time sketching out ideas on paper first, and ultimately decided based on my research and surveys, to include a home/overview tab, a statistics tab for the user’s albums/songs, a payout tab, and a user profile tab. My goal
+                    with this app is to empower artists, which is why the statistics play such a big role here. By learning about who is listening to their music and where, artists can choose to use that data to inform their future actions, such as catering
+                    their release dates and special promos to regions where there are more listeners.</p>
+
+                <p>Another way I aimed to create a feeling of empowerment for the user was by including a notifications panel. This is a fairly standard feature in many apps, though I felt it would play an especially important role in the Materia Dashboard
+                    app. The thinking is that this notifications pane could offer the user all of the current and relevant information they need to know: how many new followers they got on Spotify/Bandcamp; how many purchases their latest release got;
+                    that their album just reached the Billboard charts; etc. Again, this information aims to instill a feeling of support and encouragement for the artist, which then empowers their decisions moving forward and inspires them to create
+                    more art.</p>
+
+                <p>After the paper sketches were complete, I dove into Adobe XD and got designing. I kept the design fairly minimal, as I wanted it to be very clean and easy to use, and this version 1 prototype was intended to be a simple proof-of-concept.
+                    I used the Materia brand color teal, and many stock UI elements for the charts and graphs on the statistics page. I pulled some actual album art from the Materia Collective website to fill into the stats page (fun fact: all the albums
+                    I chose in this prototype were projects I contributed to and/or facilitated the production of).</p>
+
+                    <img src="img/portfolio/materia/materia1.png" alt="Materia App design prototype" class="overlay-content_image">
+
+                <p>Creating the prototype didn’t take too long, and I ran it by some fellow Materia Collective artists and Sebastian to get their feedback. After enthusiastic thumbs up all-around, I decided to call this prototype complete!</p>
+
+                <p>Again, my intention in creating this prototype was to show more of a surface-level proof-of-concept, rather than a deep dive into specific functionality. I will say that Adobe XD did leave a lot to be desired in terms of functionality;
+                    if I were to create this prototype again, I would likely choose different design tools (such as Sketch/Principle). If this project ends up moving forward, I would, of course, seek to prototype and run tests for the functionality and
+                    interaction for all of the features, and would more formally run user research sessions to validate the flow of the user experience and get feedback to make this the most effective and empowering app for Materia Collective artists
+                    as possible.</p>
+
+            </section>
+
+            <section class="overlay-content_todoist">todoist</section>
+
+            <section class="overlay-content_creatutor">Creatutor</section>
+        </div>
+
     </div>
+
+
     <div class="container">
 
         <header class="header">
@@ -94,14 +164,9 @@
 
                         <p>Thank you so much for being here, visiting my website. I invite you to explore select pieces of work in my portfolio below. And, if you are interested in collaborating on something, <a href="#" class="top-nav__link top-nav__link--contact">please get in touch!</a></p>
                     </div>
-                    <h1 class="about__header">ABOUT</h1>
-
                 </section>
-                <!-- <div class="about__bio--line"></div> -->
 
                 <section class="portfolio">
-                    <h1 class="portfolio__header">PORTFOLIO</h1>
-
                     <div class="portfolio__list">
 
                         <div class="portfolio__card">
@@ -111,7 +176,7 @@
                             <div class="portfolio__card--title">
                                 <div class="portfolio__card--title-heading">Materia Collective</div>
                                 <div class="portfolio__card--title-subheading">Mobile App Prototype</div>
-                                <button class="portfolio__cta" data-portfolio="materia" onclick="showPortfolioOverlay()">Read More<span>&rarr;</span></button>
+                                <button class="portfolio__cta" data-portfolio="materia" onclick="openNav(this)">Read More<span>&rarr;</span></button>
                             </div>
                         </div>
 
@@ -122,7 +187,7 @@
                             <div class="portfolio__card--title">
                                 <div class="portfolio__card--title-heading">Todoist</div>
                                 <div class="portfolio__card--title-subheading">Timer Feature Addition Prototype</div>
-                                <button class="portfolio__cta" data-portfolio="todoist">Read More<span>&rarr;</span></button>
+                                <button class="portfolio__cta" data-portfolio="todoist" onclick="openNav(this)">Read More<span>&rarr;</span></button>
                             </div>
                         </div>
 
@@ -133,7 +198,7 @@
                             <div class="portfolio__card--title">
                                 <div class="portfolio__card--title-heading">CreaTutor</div>
                                 <div class="portfolio__card--title-subheading">Mobile App Prototype</div>
-                                <button class="portfolio__cta" data-portfolio="creatutor">Read More<span>&rarr;</span></button>
+                                <button class="portfolio__cta" data-portfolio="creatutor" onclick="openNav(this)">Read More<span>&rarr;</span></button>
                             </div>
                         </div>
                     </div>
@@ -146,7 +211,9 @@
                     <h1 class="contact__header">CONTACT</h1>
                     <div class="contact__info" data-clipboard-text="jacob@jacobpernell.com">jacob@jacobpernell.com</div>
                     <div class="contact__info--sub">(click to copy)</div>
+                    <!-- <div class="copyright">&copy; 2018 Jacob Pernell</div> -->
                 </div>
+
             </footer>
         </div>
     </div>

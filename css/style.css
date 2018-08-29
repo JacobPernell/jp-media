@@ -8,9 +8,9 @@
     font-size: 2rem;
     font-weight: 300;
     letter-spacing: 0.18rem;
-    margin: auto;
+    margin: 10rem auto;
     padding: 3rem 4rem;
-    max-width: 60%;
+    max-width: 80rem;
     text-align: justify;
     display: flex;
     flex-direction: column;
@@ -140,6 +140,11 @@ body {
       cursor: default;
       color: var(--color-white); }
 
+.copyright {
+  font-weight: 300;
+  color: #f1f1f1;
+  font-size: 1rem; }
+
 .header {
   height: 8rem;
   width: 100%;
@@ -187,7 +192,7 @@ body {
 
 .nav-colored {
   background-color: var(--color-white);
-  border-bottom: .5px solid black;
+  border-bottom: 0.5px solid rbga(0, 0, 0, 0.2);
   transition: all .7s; }
 
 .nav-transparent {
@@ -387,56 +392,73 @@ body {
       padding-left: 0.5rem; }
 
 .overlay {
-  content: "";
+  height: 100%;
   width: 0;
-  height: 100vh;
   position: fixed;
-  top: 0;
-  left: 0;
-  background: white;
   z-index: 5000;
-  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1); }
-  .overlay_close {
-    border: none;
-    outline: none;
-    display: none;
+  left: 0;
+  top: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .overlay .closebtn {
     position: absolute;
-    left: 32px;
-    top: 32px;
-    width: 32px;
-    height: 32px;
-    opacity: 0.3; }
-  .overlay_close:hover {
-    opacity: 1; }
-  .overlay_close:active {
-    transform: scale(0.92); }
-  .overlay_close:after, .overlay_close:before {
-    position: absolute;
-    top: 0;
-    left: 15px;
-    content: ' ';
-    height: 33px;
-    width: 2px;
-    background-color: #333; }
-  .overlay_close:before {
-    transform: rotate(45deg); }
-  .overlay_close:after {
-    transform: rotate(-45deg); }
-  .overlay_materia {
-    display: none; }
-  .overlay_todoist {
-    display: none; }
-  .overlay_creatutor {
-    display: none; }
+    right: 4rem;
+    font-size: 10rem; }
+  .overlay a {
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s; }
+    .overlay a:hover, .overlay a:focus {
+      color: #c3c3c3; }
 
-.overlayfullwidth {
-  width: 100vw; }
+.overlay-content {
+  position: relative;
+  margin: auto;
+  top: 10%;
+  width: 80%;
+  height: 80%;
+  overflow-y: scroll;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 0.18rem;
+  margin-top: 1rem; }
+  .overlay-content .quote {
+    text-align: center;
+    font-weight: 400;
+    font-style: italic; }
+  .overlay-content_image {
+    width: 100%;
+    padding: 2rem; }
+  .overlay-content_video {
+    width: 20%; }
+  .overlay-content--title {
+    font-family: "Quattrocento", serif;
+    padding-right: 1rem;
+    margin-bottom: 3rem;
+    text-align: left;
+    flex: 1; }
+    .overlay-content--title-heading {
+      font-size: 5rem;
+      margin-bottom: -2rem; }
+    .overlay-content--title-subheading {
+      font-size: 3rem;
+      font-style: italic; }
+  .overlay-content_materia {
+    opacity: 0;
+    transition: all .2s; }
+  .overlay-content_todoist {
+    opacity: 0;
+    transition: all .2s; }
+  .overlay-content_creatutor {
+    opacity: 0;
+    transition: all .2s; }
+  .overlay-content p:not(:last-child) {
+    padding-bottom: 2rem; }
 
-.portfoliodisplay {
-  display: inline; }
-
-.portfoliodisplaynone {
-  display: none; }
+.portfolio-display {
+  opacity: 1; }
 
 .services {
   background-color: var(--color-blue-dark);

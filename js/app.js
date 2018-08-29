@@ -2,27 +2,20 @@
 const servicesTitle = document.querySelector('.services__info--title');
 const servicesVideo = document.querySelector('.services__info--video');
 const servicesText = document.querySelector('.services__info--text');
-const portfolioOverlay = document.querySelector('.overlay');
-const portfolioOverlayClose = document.querySelector('.overlay_close');
-let portOpen = false;
+let portName;
 
 // Show portfolio overlay
-function showPortfolioOverlay() {
-    portfolioOverlay.classList.toggle("overlayfullwidth");
-    if (!portOpen) {
-        portfolioOverlayClose.classList.add("portfoliodisplay");
-        portfolioOverlayClose.classList.remove("portfoliodisplaynone");
-        portOpen = true;
-    } else {
-        portfolioOverlayClose.classList.remove("portfoliodisplay");
-        portfolioOverlayClose.classList.add("portfoliodisplaynone");
-        portOpen = false;
-    }
-
+function openNav(e) {
+    document.getElementById("portOverlay").style.width = "100%";
+    portName = document.querySelector(`.overlay-content_${e.dataset.portfolio}`);
+    portName.classList.toggle("portfolio-display");
 }
 
-// let portName = document.querySelector(`.overlay_${e.dataset.portfolio}`);
-// portName.classList.toggle("portfoliodisplay");
+function closeNav(e) {
+    document.getElementById("portOverlay").style.width = "0%";
+    portName.classList.toggle("portfolio-display");
+}
+
 
 // Click to copy email to clipboard
 const clipboard = new ClipboardJS('.contact__info');

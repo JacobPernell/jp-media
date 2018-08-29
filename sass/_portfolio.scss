@@ -119,76 +119,102 @@
 }
 
 .overlay {
-    content: "";
+    height: 100%;
     width: 0;
-    height: 100vh;
     position: fixed;
-    top: 0;
-    left: 0;
-    background: white;
     z-index: 5000;
-    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+    left: 0;
+    top: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 
-    &_close {
-        border: none;
-        outline: none;
-        display: none;
+    .closebtn {
         position: absolute;
-        left: 32px;
-        top: 32px;
-        width: 32px;
-        height: 32px;
-        opacity: 0.3;
+        right: 4rem;
+        font-size: 10rem;
     }
 
-    &_close:hover {
-        opacity: 1;
+    a {
+        // padding: 5rem;
+        text-decoration: none;
+        // font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+
+        &:hover,
+        &:focus {
+            color: #c3c3c3;
+        }
+    }
+}
+
+.overlay-content {
+    position: relative;
+    margin: auto;
+    top: 10%;
+    width: 80%;
+    height: 80%;
+    overflow-y: scroll;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.18rem;
+    margin-top: 1rem;
+
+    .quote {
+        text-align: center;
+        font-weight: 400;
+        font-style: italic;
     }
 
-    &_close:active {
-        transform: scale(.92);
+    &_image {
+        width: 100%;
+        padding: 2rem;
     }
 
-    &_close:after,
-    &_close:before {
-        position: absolute;
-        top: 0;
-        left: 15px;
-        content: ' ';
-        height: 33px;
-        width: 2px;
-        background-color: #333;
+    &_video {
+        width: 20%;
     }
 
-    &_close:before {
-        transform: rotate(45deg);
-    }
+    &--title {
+        font-family: $font-serif;
+        padding-right: 1rem;
+        margin-bottom: 3rem;
+        text-align: left;
+        flex: 1;
 
-    &_close:after {
-        transform: rotate(-45deg);
+        &-heading {
+            font-size: 5rem;
+            margin-bottom: -2rem;
+        }
+
+        &-subheading {
+            font-size: 3rem;
+            font-style: italic;
+        }
     }
 
     &_materia {
-        display: none;
+        opacity: 0;
+        transition: all .2s;
     }
 
     &_todoist {
-        display: none;
+        opacity: 0;
+        transition: all .2s;
     }
 
     &_creatutor {
-        display: none;
+        opacity: 0;
+        transition: all .2s;
+    }
+
+    p:not(:last-child) {
+        padding-bottom: 2rem;
     }
 }
 
-.overlayfullwidth {
-    width: 100vw;
-}
-
-.portfoliodisplay {
-    display: inline;
-}
-
-.portfoliodisplaynone {
-    display: none;
+.portfolio-display {
+    opacity: 1;
 }
