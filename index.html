@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/94/three.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.1/clipboard.min.js"></script>
 
@@ -18,7 +17,12 @@
 </head>
 
 <body class="app">
-    <div class="overlay"></div>
+    <div class="overlay">
+        <button class="overlay_close" onclick="showPortfolioOverlay()"></button>
+        <section class="overlay_materia">Materia</section>
+        <section class="overlay_todoist">todoist</section>
+        <section class="overlay_creatutor">Creatutor</section>
+    </div>
     <div class="container">
 
         <header class="header">
@@ -35,23 +39,11 @@
                         </a>
                     </li>
 
-                    <!-- <li class="top-nav__item">
-                        <a href="#" class="top-nav__link top-nav__link--services">
-                            SERVICES
-                        </a>
-                    </li> -->
-
                     <li class="top-nav__item">
                         <a href="#" class="top-nav__link top-nav__link--portfolio">
                             PORTFOLIO
                         </a>
                     </li>
-
-                    <!-- <li class="top-nav__item">
-                        <a href="#" class="top-nav__link top-nav__link--testimonials">
-                            TESTIMONIALS
-                        </a>
-                    </li> -->
 
                     <li class="top-nav__item">
                         <a href="#" class="top-nav__link top-nav__link--contact">
@@ -105,27 +97,7 @@
                     <h1 class="about__header">ABOUT</h1>
 
                 </section>
-                <div class="about__bio--line"></div>
-
-                <!-- <section class="services">
-                    <div class="services__items">
-                        <div class="services__group">
-                            <ul class="services__list">
-                                <li class="services__list--item" onmouseover="setServicesDisplay(event)" data-servicetype="web">Web Design</li>
-                                <li class="services__list--item" onmouseover="setServicesDisplay(event)" data-servicetype="ux">UI / UX Design</li>
-                                <li class="services__list--item" onmouseover="setServicesDisplay(event)" data-servicetype="audio">Sonic Branding</li>
-                                <li class="services__list--item" onmouseover="setServicesDisplay(event)" data-servicetype="video">Video Production</li>
-                                <li class="services__list--item" onmouseover="setServicesDisplay(event)" data-servicetype="marketing">Digital Content Marketing</li>
-                            </ul>
-                            <div class="services__info">
-                                <div class="services__info--title"></div>
-                                <div class="services__info--video"></div>
-                                <div class="services__info--text"></div>
-                            </div>
-                        </div>
-                        <h1 class="services__header">SERVICES</h1>
-                    </div>
-                </section> -->
+                <!-- <div class="about__bio--line"></div> -->
 
                 <section class="portfolio">
                     <h1 class="portfolio__header">PORTFOLIO</h1>
@@ -139,7 +111,7 @@
                             <div class="portfolio__card--title">
                                 <div class="portfolio__card--title-heading">Materia Collective</div>
                                 <div class="portfolio__card--title-subheading">Mobile App Prototype</div>
-                                <button class="portfolio__cta portfolio__cta--1"><a href="#">Read More<span>&rarr;</span></a></button>
+                                <button class="portfolio__cta" data-portfolio="materia" onclick="showPortfolioOverlay()">Read More<span>&rarr;</span></button>
                             </div>
                         </div>
 
@@ -150,7 +122,7 @@
                             <div class="portfolio__card--title">
                                 <div class="portfolio__card--title-heading">Todoist</div>
                                 <div class="portfolio__card--title-subheading">Timer Feature Addition Prototype</div>
-                                <button class="portfolio__cta portfolio__cta--1"><a href="#">Read More<span>&rarr;</span></a></button>
+                                <button class="portfolio__cta" data-portfolio="todoist">Read More<span>&rarr;</span></button>
                             </div>
                         </div>
 
@@ -161,67 +133,11 @@
                             <div class="portfolio__card--title">
                                 <div class="portfolio__card--title-heading">CreaTutor</div>
                                 <div class="portfolio__card--title-subheading">Mobile App Prototype</div>
-                                <button class="portfolio__cta portfolio__cta--1"><a href="#">Read More<span>&rarr;</span></a></button>
+                                <button class="portfolio__cta" data-portfolio="creatutor">Read More<span>&rarr;</span></button>
                             </div>
                         </div>
-
                     </div>
-                    <!-- <button class="portfolio__button">
-                        View Full Portfolio <span class="right-arrow">&rarr;</span>
-                    </button> -->
                 </section>
-
-                <!-- <section class="testimonials">
-                    <div class="testimonials__grid testimonials__grid--1">
-                        <div class="testimonials__card">
-                            <figure class="testimonials__picture">
-                                <img src="img/testimonials/akash.jpg" alt="Akash Thakkar testimonial image">
-                            </figure>
-                            <div class="testimonials__text">
-                                <strong><p>Akash Thakkar - Composer/Sound Designer</p></strong>
-                                <p>"Jacob completely overdelivered. The design and animation he made for me perfectly suited my tone, brand, and the kind of energy I want to convey to my viewers. To anyone looking for digital media services and design work,
-                                    I highly recommend him!"</p>
-                            </div>
-                        </div>
-
-                        <div class="testimonials__card">
-                            <figure class="testimonials__picture">
-                                <img src="img/testimonials/dana.jpg" alt="Dana Ritchie testimonial image">
-                            </figure>
-                            <div class="testimonials__text">
-                                <strong><p>Dana Ritchie - Emotional Enlightment Services Ltd.</p></strong>
-                                <p>"Working with Jacob was my pleasure. He is very good at what he does. Very dependable, clear communicator. Creates great music. He has a great feel for tasks assigned and I would recommend him without a doubt."</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="testimonials__grid testimonials__grid--2">
-                        <div class="testimonials__card">
-                            <figure class="testimonials__picture">
-                                <img src="img/testimonials/kelly.jpg" alt="Dr. Kelly Bender testimonial image">
-                            </figure>
-                            <div class="testimonials__text">
-                                <strong><p>Dr. Kelly Bender, ND - Pure Vitality</p></strong>
-                                <p>"Jacob is an amazing digital wizard! When I got his email with my animated logo I couldn't stop smiling! My staff and business partner were blown away. I can't recommend him highly enough!"</p>
-                            </div>
-                        </div>
-
-                        <div class="testimonials__card">
-                            <figure class="testimonials__picture">
-                                <img src="img/testimonials/drp.png" alt="Dr. P testimonial image">
-                            </figure>
-                            <div class="testimonials__text">
-                                <strong><p>Dr. Wayne P - DynamicLeader</p></strong>
-                                <p>"My DynamicLeader® programs were taken online as Jacob worked his magic. I went from having ideas to getting not just one course, but two, plus a membership program up and running in a short time and affordable rate. The
-                                    feeling of waking up to emails telling you that people have been purchasing your programs while you've been sleeping is exhilarating. Don't wait. JacobPernell.media is the right choice for your music, your video editing,
-                                    and for your online courses."</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h1 class="testimonials__header">Testimonials</h1>
-                </section> -->
 
             </main>
 
@@ -235,7 +151,6 @@
         </div>
     </div>
 
-    <!-- <script src="js/services3d.js"></script> -->
     <script src="js/app.js"></script>
 </body>
 

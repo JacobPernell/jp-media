@@ -52,13 +52,12 @@
                 font-size: 3rem;
                 font-style: italic;
             }
-
         }
 
         &--info {
             padding-left: 3rem;
             font-size: 2rem;
-            letter-spacing: .1rem;
+            letter-spacing: 0.1rem;
 
             &-img-area {
                 width: 100%;
@@ -67,7 +66,6 @@
                     width: 100%;
                     object-fit: contain;
                 }
-
                 // &:hover > img {
                 //     transform: scale(1.1);
                 // }
@@ -79,11 +77,12 @@
         font-size: 2rem;
         font-family: $font-primary;
         font-weight: 400;
-        letter-spacing: .4rem;
+        letter-spacing: 0.4rem;
         text-transform: uppercase;
-        padding: 1rem 0 2rem .5rem;
+        padding: 1rem 0 2rem 0.5rem;
         background: none;
         border: none;
+        outline: none;
 
         a {
             &:link,
@@ -99,7 +98,7 @@
             display: block;
             width: 33%;
             height: 2px;
-            margin-top: .5rem;
+            margin-top: 0.5rem;
             background: var(--color-black);
             transition: width 0.2s ease-out;
         }
@@ -110,11 +109,11 @@
 
         span {
             padding-left: 0;
-            transition: padding .2s ease-out;
+            transition: padding 0.2s ease-out;
         }
 
         &:hover span {
-            padding-left: .5rem;
+            padding-left: 0.5rem;
         }
     }
 }
@@ -128,4 +127,68 @@
     left: 0;
     background: white;
     z-index: 5000;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+    &_close {
+        border: none;
+        outline: none;
+        display: none;
+        position: absolute;
+        left: 32px;
+        top: 32px;
+        width: 32px;
+        height: 32px;
+        opacity: 0.3;
+    }
+
+    &_close:hover {
+        opacity: 1;
+    }
+
+    &_close:active {
+        transform: scale(.92);
+    }
+
+    &_close:after,
+    &_close:before {
+        position: absolute;
+        top: 0;
+        left: 15px;
+        content: ' ';
+        height: 33px;
+        width: 2px;
+        background-color: #333;
+    }
+
+    &_close:before {
+        transform: rotate(45deg);
+    }
+
+    &_close:after {
+        transform: rotate(-45deg);
+    }
+
+    &_materia {
+        display: none;
+    }
+
+    &_todoist {
+        display: none;
+    }
+
+    &_creatutor {
+        display: none;
+    }
+}
+
+.overlayfullwidth {
+    width: 100vw;
+}
+
+.portfoliodisplay {
+    display: inline;
+}
+
+.portfoliodisplaynone {
+    display: none;
 }
