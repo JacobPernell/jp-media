@@ -40,13 +40,7 @@ window.onscroll = function() {
 // Navbar click to scroll
 $(".top-nav__link--about").click(function() {
     $('html,body').animate({
-            scrollTop: $(".about").offset().top - $('.header').outerHeight() + 20
-        },
-        'slow');
-});
-$(".top-nav__link--services").click(function() {
-    $('html,body').animate({
-            scrollTop: $(".services").offset().top - $('.header').outerHeight() + 20
+            scrollTop: $(".about").offset().top - $('.header').outerHeight() + 80
         },
         'slow');
 });
@@ -59,12 +53,6 @@ $(".top-nav__link--portfolio").click(function() {
 $(".hero__learn-more").click(function() {
     $('html,body').animate({
             scrollTop: $(".portfolio").offset().top - $('.header').outerHeight() + 20
-        },
-        'slow');
-});
-$(".top-nav__link--testimonials").click(function() {
-    $('html,body').animate({
-            scrollTop: $(".testimonials").offset().top - $('.header').outerHeight() + 20
         },
         'slow');
 });

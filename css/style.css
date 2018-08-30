@@ -99,6 +99,7 @@ body {
   font-size: 1.6rem; }
 
 .contact {
+  font-family: "Quattrocento", serif;
   min-height: 90vh;
   display: flex;
   flex-direction: column;
@@ -146,7 +147,7 @@ body {
   font-size: 1rem; }
 
 .header {
-  height: 8rem;
+  height: 7rem;
   width: 100%;
   padding-top: 8rem;
   padding-bottom: 6rem;
@@ -186,8 +187,8 @@ body {
           width: 100%; }
   .header__logo {
     fill: var(--color-black);
-    height: 7rem;
-    padding-bottom: 1.5rem;
+    height: 6rem;
+    padding-bottom: 1rem;
     z-index: 150; }
 
 .nav-colored {
@@ -208,6 +209,7 @@ body {
   position: relative;
   z-index: 50; }
   .hero__container {
+    position: relative;
     height: 100vh;
     background-color: var(--color-pink);
     display: flex;
@@ -216,25 +218,25 @@ body {
   .hero__img {
     width: 100%;
     object-fit: cover;
-    transform: translate(-7rem, 1rem) scale(1.08); }
+    transform: scale(1.02); }
   .hero__text {
     position: absolute;
-    top: 30rem;
-    right: 15rem;
-    width: 35%;
+    top: 22rem;
+    right: 2rem;
+    width: 40%;
     font-family: "Quattrocento", serif;
-    font-size: 4.5rem;
+    font-size: 3.2rem;
     color: var(--color-black);
-    align-self: center;
     font-weight: 400;
-    margin-left: -5rem;
+    margin: auto;
+    margin-right: 7rem;
     padding-left: 5rem;
     padding-bottom: 5rem;
     animation: fadeIn 0.7s ease-out; }
     .hero__text span {
       font-weight: 700; }
   .hero__cta {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     letter-spacing: .4rem;
@@ -347,10 +349,10 @@ body {
       text-align: left;
       flex: 1; }
       .portfolio__card--title-heading {
-        font-size: 5rem;
-        margin-bottom: -2rem; }
-      .portfolio__card--title-subheading {
         font-size: 3rem;
+        margin-bottom: -1rem; }
+      .portfolio__card--title-subheading {
+        font-size: 2rem;
         font-style: italic; }
     .portfolio__card--info {
       padding-left: 3rem;
@@ -361,9 +363,12 @@ body {
         .portfolio__card--info-img-area img {
           width: 100%;
           box-shadow: 3px 4px 25px rgba(0, 0, 0, 0.2);
-          object-fit: cover; }
+          object-fit: cover;
+          transition: all .4s; }
+          .portfolio__card--info-img-area img:hover {
+            transform: scale(1.01); }
   .portfolio__cta {
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     letter-spacing: 0.4rem;
@@ -405,7 +410,7 @@ body {
   .overlay .closebtn {
     position: absolute;
     right: 4rem;
-    font-size: 10rem; }
+    font-size: 7rem; }
   .overlay a {
     text-decoration: none;
     color: #818181;
