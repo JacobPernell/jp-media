@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link href="https://fonts.googleapis.com/css?family=Quattrocento:400|Oswald:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento:400|Open+Sans:300,400" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
@@ -17,29 +17,20 @@
 </head>
 
 <body class="app">
-    <!-- <div class="overlay">
-        <button class="overlay_close" onclick="showPortfolioOverlay()"></button>
-        <div class="overlay_content">
-            dsafkjlksdjflkj
-            <section class="overlay_materia">Materia</section>
-            <section class="overlay_todoist">todoist</section>
-            <section class="overlay_creatutor">Creatutor</section>
-        </div>
-    </div> -->
 
     <div id="portOverlay" class="overlay">
 
-        <!-- Button to close the overlay navigation -->
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-        <!-- Overlay content -->
         <div class="overlay-content">
             <section class="overlay-content_materia">
                 <div class="overlay-content--title">
                     <div class="overlay-content--title-heading">Materia Collective</div>
                     <div class="overlay-content--title-subheading">Mobile App Prototype</div>
                 </div>
-                <!-- <video src="/img/portfolio/materia/materiaApp.mp4" type="video/mp4" class="overlay-content_video" controls> -->
+
+                <video src="/img/portfolio/materia/materiaApp.mp4" type="video/mp4" class="overlay-content_video overlay-content_video--materia" controls></video>
+
 
                 <p>The Materia Collective is an online community of over 600 musicians, arrangers, and composers from around the world who frequently collaborate to produce licensed cover songs for video game music. Since its inception back in 2015 by founder
                     Sebastian Wolff, the Collective has grown much larger than being just a cover song community. Among many other things, the Materia Collective now serves to help video game composers distribute their music to the world, as well as ensure
@@ -65,6 +56,11 @@
                     with this app is to empower artists, which is why the statistics play such a big role here. By learning about who is listening to their music and where, artists can choose to use that data to inform their future actions, such as catering
                     their release dates and special promos to regions where there are more listeners.</p>
 
+                <figure>
+                    <img src="img/portfolio/materia/materia1.png" alt="Paper sketches of the Materia Dashboard app" class="overlay-content_image">
+                    <figcaption>Paper sketches of the Materia Dashboard app</figcaption>
+                </figure>
+
                 <p>Another way I aimed to create a feeling of empowerment for the user was by including a notifications panel. This is a fairly standard feature in many apps, though I felt it would play an especially important role in the Materia Dashboard
                     app. The thinking is that this notifications pane could offer the user all of the current and relevant information they need to know: how many new followers they got on Spotify/Bandcamp; how many purchases their latest release got;
                     that their album just reached the Billboard charts; etc. Again, this information aims to instill a feeling of support and encouragement for the artist, which then empowers their decisions moving forward and inspires them to create
@@ -74,7 +70,10 @@
                     I used the Materia brand color teal, and many stock UI elements for the charts and graphs on the statistics page. I pulled some actual album art from the Materia Collective website to fill into the stats page (fun fact: all the albums
                     I chose in this prototype were projects I contributed to and/or facilitated the production of).</p>
 
+                <figure>
                     <img src="img/portfolio/materia/materia1.png" alt="Materia App design prototype" class="overlay-content_image">
+                    <figcaption>Finished design of artboards in Adobe XD</figcaption>
+                </figure>
 
                 <p>Creating the prototype didn’t take too long, and I ran it by some fellow Materia Collective artists and Sebastian to get their feedback. After enthusiastic thumbs up all-around, I decided to call this prototype complete!</p>
 
@@ -85,9 +84,140 @@
 
             </section>
 
-            <section class="overlay-content_todoist">todoist</section>
+            <section class="overlay-content_todoist">
+                <div class="overlay-content--title">
+                    <div class="overlay-content--title-heading">Todoist</div>
+                    <div class="overlay-content--title-subheading">Time Tracking Feature Addition</div>
+                </div>
 
-            <section class="overlay-content_creatutor">Creatutor</section>
+                <video src="/img/portfolio/todoist/Todoist-v3.mov" type="video/mov" class="overlay-content_video overlay-content_video--todoist" controls></video>
+
+                <p>I never thought that a productivity app would bring me closer to my family and friends!</p>
+
+                <p>In early 2018, I discovered Todoist, a website which offers a set of enhanced to-do list features. You can quickly and easily set recurring tasks, organize by tags and projects, and share projects with other people. The user experience
+                    and flow of using this tool is incredibly intuitive, and I quickly fell in love with it because of that.</p>
+
+                <p>Prior to discovering Todoist, I was using a website called Habitica, which is a to-do list app inspired by role playing games with gamified mechanics tied into crossing off to-do items. While the gamified mechanics of that site were fun
+                    and kept me hooked for several months, I eventually discovered that Todoist’s features far better suited my needs given the various freelance music and digital media projects I was taking on at the time.</p>
+
+                <p>Over the next few months, I turned some friends and family members onto Todoist. I was helping my father with some marketing and digital media work for his online business, and the work at the time was significantly ramping up. We set
+                    up a collaborative project on Todoist and found that it helped keep both of us focused, accountable, and more productive! Since then, I’ve been using Todoist to help me keep track of both my personal and professional life.</p>
+
+                <p>I enjoy learning more about topics like about high performance and productivity, and in my recent exploration into learning more about UX/UI/Ix design, I started to wonder:</p>
+
+                <p class="quote">“How could I expand on Todoist to add a feature that enabled its users to be even more productive?”</p>
+
+                <p>A while ago, I heard a quote from somewhere: “What gets measured, gets managed.” I remembered that back when I was using other to-do tools, I also explored using a time tracking tool called Toggl. This tool was helpful in that it allowed
+                    me to see how much time I was spending on any given project, but it ultimately didn’t stick with me as I felt the experience of using multiple single-purpose tools was confusing and clunky.</p>
+
+                <p>It didn’t take me long to realize that adding a time tracking feature to Todoist could be a next step for the app, and thus my week of designing and prototyping began. I felt that being able to measure how much time any given task is taking
+                    could in turn allow the user to better manage their energy, time, and overall schedule. This would, ideally, allow the user to share more of themselves and their work with the world. This project also served as an opportunity to learn
+                    more about using Sketch, and to teach myself the design and coding features of Framer. (Please note that I am not affiliated with Todoist, but I did create this to use in an application to join their team!).</p>
+
+                <p>It was important to me that adding this feature felt seamless, like a natural next-step integration that supports the existing functionality, rather than something that felt tacked on and gets in the way of the core to-do functionality.
+                    Given that, I got to designing!</p>
+
+                <figure>
+                    <img src="img/portfolio/todoist/todoistSketch.png" alt="Todoist design in Sketch App" class="overlay-content_image">
+                    <figcaption>Sketch design of Todoist interface (with my actual Todoist account for reference)</figcaption>
+                </figure>
+
+                <p>I mocked up a super simplified version of Todoist in Sketch, and imported it into Framer to program the functionality. On the Todoist website, when you hover over an item, you can see a few icons appear (such as one which lets you add
+                    a comment to the to-do item and one that lets you click/drag the to-do item to a different position). Since the intention is to be able to track per item, I thought the most seamless way to integrate the new time-tracking feature was
+                    to add the icon here, when a user hovers over an item and all the other icons fade in.</p>
+
+                <figure>
+                    <img src="img/portfolio/todoist/framer.png" alt="Coding the functionality of the Todoist demo in Framer" class="overlay-content_image">
+                    <figcaption>Coding the functionality of the Todoist demo in Framer</figcaption>
+                </figure>
+
+                <p>Originally, I thought to use a ‘stopwatch’ icon to represent the timer. But, I second-guessed myself: Todoist has an ‘alarm clock’ icon to represent the ‘Reminders’ feature, and I was concerned that if this feature were to make it to the
+                    final website, users would become confused by the similarity of visual design. So, in an attempt to preemptively circumvent that confusion, the first iteration of the prototype ended up using an ‘hourglass’ icon instead to indicate
+                    that a user can start a timer for that task.</p>
+
+                <figure>
+                    <video src="/img/portfolio/todoist/Todoist-v2.mov" type="video/mov" class="overlay-content_video overlay-content_video--todoist" controls></video>
+                    <figcaption>First prototype of the Todoist timer demo with hourglass icon</figcaption>
+                </figure>
+
+                <p>I ran the first prototype by eight different people (half of whom are existing Todoist users), and their feedback confirmed what I was doubting: the hourglass was throwing people off. While people did understand that the hourglass represented
+                    something to do with time and they liked the animation effects, the icon itself wasn’t as intuitively and quickly conveying what it needed to. One user shared that when the hourglass rotated, they thought it was cool, but then felt
+                    slightly confused that the counter was going up instead of down, and then briefly panicked when the hourglass rotated back, fearing that they’d somehow lose their timer progress.</p>
+
+                <p>I realized that sticking with my original idea of a stopwatch was the wiser choice after all (partially because in this demo, I don’t actually include the ‘alarm clock’ icon anyway).</p>
+
+                <figure>
+                    <img src="img/portfolio/todoist/alarmContext.png" alt="Alarm clock icon in Todoist" class="overlay-content_image">
+                    <figcaption>Alarm clock icon in Todoist, in context</figcaption>
+                </figure>
+
+                <p>I realized that if the icons were designed correctly and positioned strategically, it wouldn’t be confusing. I found a stopwatch icon from a Sketch icon pack I had downloaded and swapped it with the hourglass.</p>
+
+                <figure>
+                    <img src="img/portfolio/todoist/stopwatch.png" alt="The stopwatch icon I ended up using" class="overlay-content_image overlay-content_image--small">
+                    <figcaption>The stopwatch icon I ended up using</figcaption>
+                </figure>
+
+                <p>After testing this new icon design with the same group of people, I unanimously received confirmation that they liked the stopwatch better. Furthermore, in showing them a comparison between the stopwatch and alarm clock icon in Todoist,
+                    users felt that there was indeed enough of a distinction between the two icons for them to realize they served different purposes.</p>
+
+                <p>I called this design exploration a success! From here, the next step I would want to take would be to prototype the statistics page. This page would include detailed breakdowns for how much time a user spent on any given task per day/week/month/year.
+                    I would also want this statistics page to automatically track time for different tags and categories as well (e.g. if a task I’m tracking has the tag “Personal” applied, the time tracked would count towards the individual item as well
+                    as that tag, and the statistics page would reflect that data). And last but not least, I would be very curious to see how implementing these features impact the productivity of the user and helps them share their stories with the world!</p>
+            </section>
+
+            <section class="overlay-content_creatutor">
+                <div class="overlay-content--title">
+                    <div class="overlay-content--title-heading">CreaTutor</div>
+                    <div class="overlay-content--title-subheading">Mobile App Prototype</div>
+                </div>
+                <video src="/img/portfolio/creatutor/CreaTutor_v1.mov" type="video/mov" class="overlay-content_video overlay-content_video--creatutor" controls></video>
+
+                <p>Lately, I’ve invested a lot of time into practicing what I’ve been learning about design. Because of the amount of time I was putting in, I developed a little bit of tunnel vision. I wanted to build up my skills as quickly and effectively as possible, so I had some doubts as to whether I was focusing on the things that lead me in the “right” direction.</p>
+
+                <p>I had a really positive experience taking piano lessons in the past, and so I thought taking a lesson or tutoring session might be fairly helpful for things like ‘UX design philosophy’ and ‘learning Sketch’. At the time, I felt if I could
+                    be tutored for an hour or two by an experienced UX designer and get their help answering my burning questions, I would feel a lot more confident about the direction I was heading in. So, I wondered:</p>
+
+                <p class="quote">"What would an app/service that offered tutoring for creative fields look like?”</p>
+
+                <p>I knew there were some websites out there that offered tutorials for various topics (such as Take Lessons, Wyzant, and University Tutor), but I looking for a more personalized 1-on-1 experience. I wanted to use this app idea as a means
+                    to pursue some design exploration and learn more about Sketch and Principle.</p>
+
+                <p>After some quick pen-and-paper sketches, I worked on designing in Sketch. I wanted to keep the design focused and straightforward, only really demonstrating the main user flow of finding a tutor from start to finish.</p>
+
+                <figure>
+                    <img src="img/portfolio/creatutor/step1.png" alt="The beginning of my CreaTutor app design in Sketch" class="overlay-content_image overlay-content_image--medium">
+                    <figcaption>The beginning of my CreaTutor app design in Sketch</figcaption>
+                </figure>
+
+                <p>After the design was
+                    finished, I wanted to give the app some movement, so I brought it into Principle to animate everything, and eventually created the final product after about a week of designing and animating.</p>
+
+                    <figure>
+                        <img src="img/portfolio/creatutor/full.png" alt="Finished artboard designs in Sketch" class="overlay-content_image">
+                        <figcaption>Finished artboard designs in Sketch</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="img/portfolio/creatutor/1.png" alt="Close up of Sketch designs part 1" class="overlay-content_image">
+                        <figcaption>Close up of Sketch designs, part 1</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="img/portfolio/creatutor/2.png" alt="The beginning of my CreaTutor app design in Sketch" class="overlay-content_image">
+                        <figcaption>Close up of Sketch designs, part 2</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="img/portfolio/creatutor/3.png" alt="The beginning of my CreaTutor app design in Sketch" class="overlay-content_image overlay-content_image--medium">
+                        <figcaption>Close up of Sketch designs, part 3</figcaption>
+                    </figure>
+
+                <p>This project was largely for my own learning and design exploration. Moving forward, if I were to pursue this further, I would begin by doing some more research and validation to test and see if this app idea is even desired or viable
+                    before diving into designing the full experience. At this time though, there are no plans to actually develop this into a full app (though if you would be interested in an app like this, please feel free to get in touch and let me
+                    know!).
+                </p>
+            </section>
         </div>
 
     </div>
@@ -171,29 +301,29 @@
 
                         <div class="portfolio__card">
                             <div class="portfolio__card--info-img-area">
-                                <img src="img/portfolio/portfolio-1.png" alt="" class="portfolio__card--info-img">
+                                <img src="img/portfolio/thumbnails/materia-thumb.png" alt="Materia Collective user dashboard mobile app prototype" class="portfolio__card--info-img">
                             </div>
                             <div class="portfolio__card--title">
                                 <div class="portfolio__card--title-heading">Materia Collective</div>
-                                <div class="portfolio__card--title-subheading">Mobile App Prototype</div>
+                                <div class="portfolio__card--title-subheading">User Dashboard Mobile App Prototype</div>
                                 <button class="portfolio__cta" data-portfolio="materia" onclick="openNav(this)">Read More<span>&rarr;</span></button>
                             </div>
                         </div>
 
                         <div class="portfolio__card">
                             <div class="portfolio__card--info-img-area">
-                                <img src="img/portfolio/portfolio-1.png" alt="" class="portfolio__card--info-img">
+                                <img src="img/portfolio/thumbnails/todoist-thumb.png" alt="Todoist time tracking feature addition prototype" class="portfolio__card--info-img">
                             </div>
                             <div class="portfolio__card--title">
                                 <div class="portfolio__card--title-heading">Todoist</div>
-                                <div class="portfolio__card--title-subheading">Timer Feature Addition Prototype</div>
+                                <div class="portfolio__card--title-subheading">Time Tracking Feature Addition</div>
                                 <button class="portfolio__cta" data-portfolio="todoist" onclick="openNav(this)">Read More<span>&rarr;</span></button>
                             </div>
                         </div>
 
                         <div class="portfolio__card">
                             <div class="portfolio__card--info-img-area">
-                                <img src="img/portfolio/portfolio-1.png" alt="" class="portfolio__card--info-img">
+                                <img src="img/portfolio/thumbnails/creatutor-thumb.png" alt="Fake app prototype design" class="portfolio__card--info-img">
                             </div>
                             <div class="portfolio__card--title">
                                 <div class="portfolio__card--title-heading">CreaTutor</div>

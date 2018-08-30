@@ -92,7 +92,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: "Oswald", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #000;
   font-weight: 300;
   line-height: 1.6;
@@ -192,7 +192,7 @@ body {
 
 .nav-colored {
   background-color: var(--color-white);
-  border-bottom: 0.5px solid rbga(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   transition: all .7s; }
 
 .nav-transparent {
@@ -235,7 +235,7 @@ body {
       font-weight: 700; }
   .hero__cta {
     font-size: 2rem;
-    font-family: "Oswald", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 400;
     letter-spacing: .4rem;
     text-transform: uppercase;
@@ -360,10 +360,11 @@ body {
         width: 100%; }
         .portfolio__card--info-img-area img {
           width: 100%;
-          object-fit: contain; }
+          box-shadow: 3px 4px 25px rgba(0, 0, 0, 0.2);
+          object-fit: cover; }
   .portfolio__cta {
     font-size: 2rem;
-    font-family: "Oswald", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 400;
     letter-spacing: 0.4rem;
     text-transform: uppercase;
@@ -423,21 +424,45 @@ body {
   font-size: 2rem;
   font-weight: 300;
   letter-spacing: 0.18rem;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  padding: 1rem 7rem;
+  box-shadow: 3px 4px 25px rgba(0, 0, 0, 0.2);
+  background-color: white; }
   .overlay-content .quote {
     text-align: center;
     font-weight: 400;
     font-style: italic; }
+  .overlay-content figure {
+    text-align: center; }
+  .overlay-content figcaption {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: -2rem;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    color: gray; }
   .overlay-content_image {
     width: 100%;
     padding: 2rem; }
+    .overlay-content_image--small {
+      width: 20%; }
+    .overlay-content_image--medium {
+      width: 70%; }
   .overlay-content_video {
-    width: 20%; }
+    padding-bottom: 3rem;
+    display: block;
+    margin: auto; }
+    .overlay-content_video--materia {
+      width: 20%; }
+    .overlay-content_video--todoist {
+      width: 100%; }
+    .overlay-content_video--creatutor {
+      width: 20%; }
   .overlay-content--title {
     font-family: "Quattrocento", serif;
     padding-right: 1rem;
     margin-bottom: 3rem;
-    text-align: left;
+    text-align: center;
     flex: 1; }
     .overlay-content--title-heading {
       font-size: 5rem;
@@ -446,14 +471,20 @@ body {
       font-size: 3rem;
       font-style: italic; }
   .overlay-content_materia {
+    display: none;
     opacity: 0;
-    transition: all .2s; }
+    transition: all .15s;
+    z-index: 6000; }
   .overlay-content_todoist {
+    display: none;
     opacity: 0;
-    transition: all .2s; }
+    transition: all .15s;
+    z-index: 6000; }
   .overlay-content_creatutor {
+    display: none;
     opacity: 0;
-    transition: all .2s; }
+    transition: all .15s;
+    z-index: 6000; }
   .overlay-content p:not(:last-child) {
     padding-bottom: 2rem; }
 

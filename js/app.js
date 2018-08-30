@@ -8,14 +8,15 @@ let portName;
 function openNav(e) {
     document.getElementById("portOverlay").style.width = "100%";
     portName = document.querySelector(`.overlay-content_${e.dataset.portfolio}`);
+    portName.style.display = "inline-block";
     portName.classList.toggle("portfolio-display");
 }
 
 function closeNav(e) {
     document.getElementById("portOverlay").style.width = "0%";
     portName.classList.toggle("portfolio-display");
+    setTimeout(function(){ portName.style.display = "none"; }, 500);
 }
-
 
 // Click to copy email to clipboard
 const clipboard = new ClipboardJS('.contact__info');
