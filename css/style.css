@@ -223,13 +223,13 @@ body {
     position: absolute;
     top: 22rem;
     right: 2rem;
-    width: 40%;
+    width: 42%;
     font-family: "Quattrocento", serif;
-    font-size: 3.2rem;
+    font-size: 3.1rem;
     color: var(--color-black);
     font-weight: 400;
     margin: auto;
-    margin-right: 7rem;
+    margin-right: 3rem;
     padding-left: 5rem;
     padding-bottom: 5rem;
     animation: fadeIn 0.7s ease-out; }
