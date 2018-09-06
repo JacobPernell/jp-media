@@ -172,7 +172,8 @@
         position: absolute;
         left: 60%;
         transition: all 0.2s ease-out;
-        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        @supports (-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0)) {
+            -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);
             clip-path: polygon(100% 0, 100% 100%, 0 100%);
         }
 
