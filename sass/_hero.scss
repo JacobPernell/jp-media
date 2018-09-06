@@ -21,6 +21,10 @@
         object-fit: cover;
         transform: scale(1.02);
 
+        @media only screen and (min-width: $bp-ultralarge) {
+            width: 100vw;
+        }
+
         @media only screen and (max-width: $bp-phone) {
             object-position: 40% 0%;
             transform: scale(1);
@@ -46,14 +50,34 @@
             font-weight: 700;
         }
 
+        @media only screen and (min-width: $bp-ultralarge) {
+            top: 35%;
+        }
+
+        @media only screen and (max-width: $bp-large) {
+            top: 30rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 2.5rem;
+            padding-bottom: 1rem;
+            top: 35rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 2.2rem;
+        }
+
         @media only screen and (max-width: $bp-phone) {
             color: white;
             text-align: center;
-            top: 82%;
-            right: 10%;
-            width: 80%;
+            top: 80%;
+            right: 9%;
+            margin-right: 0rem;
+            padding-left: 0rem;
+            padding-bottom: 0rem;
+            width: 85%;
             font-size: 2rem;
-            // background-color: rgba(255,255,255,.2);
         }
     }
 
@@ -67,8 +91,14 @@
         background: none;
         border: none;
 
-        @media only screen and (max-width: $bp-phone) {
-            display: none;
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 1rem;
+            letter-spacing: .3rem;
+            padding-bottom: 0rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            letter-spacing: .1rem;
         }
 
         a {
@@ -77,6 +107,10 @@
                 color: var(--color-black);
                 text-decoration: none;
                 text-transform: uppercase;
+
+                @media only screen and (max-width: $bp-phone) {
+                    color: white;
+                }
             }
         }
 
@@ -88,6 +122,14 @@
             margin-top: .5rem;
             background: var(--color-black);
             transition: width 0.2s ease-out;
+
+            @media only screen and (max-width: $bp-medium) {
+                height: 1px;
+            }
+
+            @media only screen and (max-width: $bp-phone) {
+                background: white;
+            }
         }
 
         &:hover::after {
@@ -97,6 +139,10 @@
         span {
             padding-left: 0;
             transition: padding .2s ease-out;
+
+            @media only screen and (max-width: $bp-phone) {
+                display: none;
+            }
         }
 
         &:hover span {
@@ -126,6 +172,17 @@
         transition: all 0.2s ease-out;
         @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
             clip-path: polygon(100% 0, 100% 100%, 0 100%);
+        }
+
+        @media only screen and (max-width: $bp-large) {
+            font-size: 1.7rem;
+            padding-top: 9rem;
+        }
+
+        @media only screen and (max-width: $bp-large) {
+            font-size: 1.7rem;
+            padding-top: 10rem;
+            padding-right: 3rem;
         }
 
         @media only screen and (max-width: $bp-phone) {

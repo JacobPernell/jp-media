@@ -1,20 +1,9 @@
 .about {
     background-color: white;
-    // color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
     min-height: 90vh;
-
-    // &:before {
-    //     // min-height: 80vh;
-    //     content: "";
-    //     position: fixed;
-    //     background-image: url(../img/ocean.jpg);
-    //     background-size: cover;
-    //     background-attachment: fixed;
-    //     filter: blur(2rem);
-    // }
 
     &__bio {
         font-size: 2rem;
@@ -51,19 +40,14 @@
                 padding-bottom: 3rem;
             }
         }
-    }
 
-    &__header {
-        align-self: center;
-        font-weight: 300;
-        font-size: 6rem;
-        letter-spacing: 1rem;
-        text-transform: uppercase;
-        padding: 0 2rem;
-        cursor: default;
-        color: var(--color-black);
-        border-left: 2px solid black;
-        writing-mode: vertical-lr;
-        text-orientation: upright;
+        @media only screen and (max-width: 68.75em) {
+            margin: 2rem auto;
+            font-size: 2.2rem;
+        }
+
+        @media only screen and (max-width: 26.6em) {
+            font-size: 1.5rem;
+        }
     }
 }

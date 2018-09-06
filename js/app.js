@@ -2,6 +2,7 @@
 const servicesTitle = document.querySelector('.services__info--title');
 const servicesVideo = document.querySelector('.services__info--video');
 const servicesText = document.querySelector('.services__info--text');
+const overlayCloseBtn = document.querySelector('.closebtn');
 let portName;
 
 // Show portfolio overlay
@@ -10,11 +11,13 @@ function openNav(e) {
     portName = document.querySelector(`.overlay-content_${e.dataset.portfolio}`);
     portName.style.display = "inline-block";
     portName.classList.toggle("portfolio-display");
+    setTimeout(function(){ overlayCloseBtn.style.position = "fixed"; }, 500);
 }
 
 function closeNav(e) {
     document.getElementById("portOverlay").style.width = "0%";
     portName.classList.toggle("portfolio-display");
+    overlayCloseBtn.style.position = "absolute";
     setTimeout(function(){ portName.style.display = "none"; }, 500);
 }
 

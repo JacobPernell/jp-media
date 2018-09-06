@@ -26,6 +26,11 @@
         flex-direction: row;
         justify-content: space-between;
         margin: auto;
+
+        @media only screen and (max-width: $bp-large) {
+            flex-direction: column;
+            align-content: center;
+        }
     }
 
     &__card {
@@ -34,6 +39,10 @@
         width: 100%;
         padding: 0 5rem;
         margin: 5rem auto;
+
+        @media only screen and (max-width: $bp-phone) {
+            margin: 2rem auto;
+        }
 
         &--title {
             font-family: $font-serif;
@@ -45,11 +54,27 @@
             &-heading {
                 font-size: 3rem;
                 margin-bottom: -1rem;
+
+                @media only screen and (max-width: $bp-large) {
+                    font-size: 5rem;
+                }
+
+                @media only screen and (max-width: $bp-phone) {
+                    font-size: 3rem;
+                }
             }
 
             &-subheading {
                 font-size: 2rem;
                 font-style: italic;
+
+                @media only screen and (max-width: $bp-large) {
+                    font-size: 3rem;
+                }
+
+                @media only screen and (max-width: $bp-phone) {
+                    font-size: 1.8rem;
+                }
             }
         }
 
@@ -60,6 +85,10 @@
 
             &-img-area {
                 width: 100%;
+
+                @media only screen and (max-width: $bp-phone) {
+                    width: 100%;
+                }
 
                 img {
                     width: 100%;
@@ -85,6 +114,14 @@
         background: none;
         border: none;
         outline: none;
+
+        @media only screen and (max-width: $bp-large) {
+            font-size: 2.5rem;
+        }
+
+        @media only screen and (max-width: $bp-phone) {
+            font-size: 1.4rem;
+        }
 
         a {
             &:link,
@@ -133,14 +170,13 @@
 
     .closebtn {
         position: absolute;
-        right: 4rem;
-        font-size: 7rem;
+        right: 3rem;
+        font-size: 6rem;
+        z-index: 10000;
     }
 
     a {
-        // padding: 5rem;
         text-decoration: none;
-        // font-size: 36px;
         color: #818181;
         display: block;
         transition: 0.3s;
@@ -155,17 +191,18 @@
 .overlay-content {
     position: relative;
     margin: auto;
-    top: 10%;
-    width: 80%;
-    height: 80%;
     overflow-y: scroll;
     font-size: 2rem;
     font-weight: 300;
     letter-spacing: 0.18rem;
     margin-top: 1rem;
     padding: 1rem 7rem;
-    box-shadow: 3px 4px 25px rgba(0,0,0,0.2);
     background-color: white;
+
+    @media only screen and (max-width: $bp-phone) {
+        padding: 1rem 2rem;
+        text-align: center;
+    }
 
     .quote {
         text-align: center;
@@ -228,11 +265,20 @@
         &-heading {
             font-size: 5rem;
             margin-bottom: -2rem;
+
+            @media only screen and (max-width: $bp-phone) {
+                font-size: 4rem;
+                margin-bottom: 0;
+            }
         }
 
         &-subheading {
             font-size: 3rem;
             font-style: italic;
+
+            @media only screen and (max-width: $bp-phone) {
+                font-size: 2rem;
+            }
         }
     }
 

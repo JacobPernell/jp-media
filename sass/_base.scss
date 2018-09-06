@@ -36,12 +36,14 @@ $color-blue-dark: #011638;
 $color-blue-medium-2: #365B96;
 
 // BREAKPOINTS
+$bp-ultralarge: 112.5em;   // 1800px
 $bp-largest: 75em;         // 1200px - 1200/16
 $bp-large: 68.75em;        // 1100px
-$bp-medium: 56.25em;       // 900px
-$bp-small: 37.5em;         // 600px
+$bp-medium: 58.125em;      // 930px
+$bp-small: 40.625em;       // 650px
 $bp-smallest: 31.25em;     // 500px
-$bp-phone: 26.25em;        // 420px
+$bp-phone: 26.6em;         // 425px
+$bp-phone-small: 20em;     // 320px
 
 *,
 *::before,
