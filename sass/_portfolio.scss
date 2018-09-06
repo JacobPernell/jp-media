@@ -240,10 +240,13 @@
         padding-bottom: 3rem;
         display: block;
         margin: auto;
-        // border: 1px solid rgba(0,0,0,0.1);
 
         &--materia {
             width: 20%;
+
+            @media only screen and (max-width: $bp-medium) {
+                width: 50%;
+            }
         }
 
         &--todoist {
@@ -252,6 +255,10 @@
 
         &--creatutor {
             width: 20%;
+
+            @media only screen and (max-width: $bp-medium) {
+                width: 50%;
+            }
         }
     }
 
@@ -267,7 +274,7 @@
             margin-bottom: -2rem;
 
             @media only screen and (max-width: $bp-phone) {
-                font-size: 4rem;
+                font-size: 3.4rem;
                 margin-bottom: 0;
             }
         }
