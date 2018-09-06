@@ -326,7 +326,8 @@ body {
           height: 1px; } }
       @media only screen and (max-width: 26.6em) {
         .hero__cta::after {
-          background: white; } }
+          background: white;
+          width: 100%; } }
     .hero__cta:hover::after {
       width: 100%; }
     .hero__cta span {
