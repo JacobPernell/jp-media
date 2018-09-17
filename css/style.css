@@ -475,7 +475,8 @@ body {
           width: 100%;
           box-shadow: 3px 4px 25px rgba(0, 0, 0, 0.2);
           object-fit: cover;
-          transition: all .4s; }
+          transition: all .4s;
+          cursor: pointer; }
           .portfolio__card--info-img-area img:hover {
             transform: scale(1.01); }
   .portfolio__cta {
@@ -487,7 +488,8 @@ body {
     padding: 1rem 0 2rem 0.5rem;
     background: none;
     border: none;
-    outline: none; }
+    outline: none;
+    cursor: pointer; }
     @media only screen and (max-width: 68.75em) {
       .portfolio__cta {
         font-size: 2.5rem; } }
