@@ -545,7 +545,7 @@ body {
   overflow-y: scroll;
   font-size: 2rem;
   font-weight: 300;
-  letter-spacing: 0.18rem;
+  letter-spacing: 0.1rem;
   margin-top: 1rem;
   padding: 1rem 7rem;
   background-color: white; }
@@ -705,6 +705,99 @@ body {
       color: var(--color-grey-light-3); }
   .services__list:hover ~ .services__info, .services__info:hover {
     border-left: 2px solid var(--color-pink-dark); }
+
+.singlepage {
+  font-family: "Quattrocento", serif;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 0.05rem; }
+  .singlepage section {
+    padding: 1rem 7rem;
+    font-family: "Open Sans", sans-serif;
+    text-align: left; }
+  .singlepage p:not(:last-child) {
+    padding-bottom: 2rem; }
+  .singlepage a {
+    color: #94272f;
+    text-decoration: none; }
+  .singlepage__header {
+    background-color: #c9353f;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%; }
+  .singlepage__video {
+    width: 60%; }
+  .singlepage__button {
+    border: 3px solid #94272f;
+    padding: 15px 60px;
+    text-transform: uppercase;
+    outline: none;
+    transition: all .3s;
+    font-size: 20px;
+    letter-spacing: .1;
+    display: block;
+    margin: auto;
+    margin-bottom: 5px; }
+    .singlepage__button:hover {
+      background-color: #94272f; }
+      .singlepage__button:hover > a {
+        color: white; }
+  .singlepage .subheader {
+    text-decoration: underline;
+    font-size: 2.2rem;
+    padding-bottom: 1rem; }
+  .singlepage_quote {
+    text-align: center;
+    font-weight: 700;
+    font-style: italic; }
+  .singlepage figure {
+    text-align: center; }
+  .singlepage figcaption {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: -2rem;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    color: gray; }
+  .singlepage_image {
+    width: 100%;
+    padding: 2rem; }
+    .singlepage_image--small {
+      width: 20%; }
+    .singlepage_image--medium {
+      width: 70%; }
+  .singlepage_video {
+    padding-bottom: 3rem;
+    display: block;
+    margin: auto; }
+    .singlepage_video--todoist {
+      width: 80%; }
+  .singlepage--title {
+    font-family: "Quattrocento", serif;
+    padding-right: 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    flex: 1; }
+    .singlepage--title-heading {
+      font-size: 5rem;
+      margin-bottom: -2rem; }
+      @media only screen and (max-width: 26.6em) {
+        .singlepage--title-heading {
+          font-size: 3.4rem;
+          margin-bottom: 0; } }
+    .singlepage--title-subheading {
+      font-size: 3rem;
+      font-style: italic; }
+      @media only screen and (max-width: 26.6em) {
+        .singlepage--title-subheading {
+          font-size: 2rem; } }
+  .singlepage_todoist {
+    display: none;
+    opacity: 0;
+    transition: all .15s;
+    z-index: 6000; }
 
 .testimonials {
   background-color: var(--color-blue-medium);
