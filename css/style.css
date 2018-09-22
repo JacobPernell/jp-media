@@ -548,11 +548,11 @@ body {
   letter-spacing: 0.1rem;
   margin-top: 1rem;
   padding: 1rem 7rem;
-  background-color: white; }
+  background-color: white;
+  text-align: justify; }
   @media only screen and (max-width: 26.6em) {
     .overlay-content {
-      padding: 1rem 2rem;
-      text-align: center; } }
+      padding: 1rem 2rem; } }
   .overlay-content .subheader {
     text-decoration: underline;
     font-size: 2.2rem;
@@ -715,7 +715,8 @@ body {
   .singlepage section {
     padding: 1rem 7rem;
     font-family: "Open Sans", sans-serif;
-    text-align: left; }
+    text-align: left;
+    text-align: justify; }
   .singlepage p:not(:last-child) {
     padding-bottom: 2rem; }
   .singlepage a {
@@ -727,6 +728,8 @@ body {
     padding: 10px;
     margin-bottom: 10px;
     width: 100%; }
+    .singlepage__header--doist {
+      background-color: #e44332; }
   .singlepage__video {
     width: 60%; }
   .singlepage__button {
