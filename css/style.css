@@ -564,12 +564,12 @@ body {
   .overlay-content figure {
     text-align: center; }
   .overlay-content figcaption {
-    text-transform: uppercase;
+    font-style: italic;
     text-align: center;
     margin-top: -2rem;
     padding-bottom: 2rem;
     font-size: 1.5rem;
-    color: gray; }
+    color: black; }
   .overlay-content_image {
     width: 100%;
     padding: 2rem; }
@@ -758,12 +758,12 @@ body {
   .singlepage figure {
     text-align: center; }
   .singlepage figcaption {
-    text-transform: uppercase;
+    font-style: italic;
     text-align: center;
     margin-top: -2rem;
     padding-bottom: 2rem;
     font-size: 1.5rem;
-    color: gray; }
+    color: black; }
   .singlepage_image {
     width: 100%;
     padding: 2rem; }
